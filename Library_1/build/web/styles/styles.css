@@ -1,0 +1,27 @@
+p
+{
+    font-family: sans-serif;
+    font-size: 15pt;
+    color: green;
+    text-align: center
+}
+.class1
+{
+    font-family: sans-serif;
+    font-size: 30pt;
+    color: red;
+}
+
+#id1
+{
+    background: silver;
+}
+div
+{
+    background-color: silver;
+    text-align: center;
+}
+div.div
+{
+    background-color: #f3f2f2;
+}

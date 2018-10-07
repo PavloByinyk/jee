@@ -1,0 +1,34 @@
+<%-- 
+    Document   : left_menu
+    Created on : 09.09.2018, 20:23:30
+    Author     : Gottgried
+--%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page import="pojo.Genre"%>
+<%@page import="data.GenreList"%>
+                    <div style="
+                         width: 25%;
+                         height: 600px;
+                         display:inline-block;
+                         background-color: activeborder">
+                        <h2 style="text-align: center">Authors List</h2>
+                        <div style="
+                            position: relative;
+                             display: table;">
+                            <ul style="list-style-type:none;">
+                                <jsp:useBean id="genreList" class="data.GenreList" scope="application"></jsp:useBean>
+                                    <% 
+                                        for(Genre genre : genreList.getGenresList()){
+                                        System.out.print(genre.getName() + " " + genre.getId());
+                                    %>
+                                <li>  <a  href="books.jsp?genre_id=<%=genre.getId()%>&name=<%=genre.getName()%>"
+                                          <%=genre.getName()%> 
+                                          style="margin: 10px 0"> 
+                                        <p> <%= genre.getName() %> </p> 
+                                      </a>  
+                                </li>
+                                 <%}%>
+                             </ul>
+                        </div>
+                    </div>                    
