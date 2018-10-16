@@ -9,10 +9,10 @@
 <%@page import="data.GenreList"%>
                     <div style="
                          width: 25%;
-                         height: 600px;
+                         height: available;
                          display:inline-block;
                          background-color: activeborder">
-                        <h2 style="text-align: center">Authors List</h2>
+                        <h2 style="text-align: center">Genre List</h2>
                         <div style="
                             position: relative;
                              display: table;">

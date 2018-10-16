@@ -5,8 +5,17 @@
  */
 package pojo;
 
+import data.AuthorList;
+import database.Database;
 import java.awt.Image;
+import java.sql.Connection;
 import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -104,7 +113,29 @@ public class Book {
         return image;
     }
 
-    
+    public void fillBookContent(){
+        Connection conn = null;
+        Statement stat = null;
+        ResultSet rs = null;
+        try{
+            //conn = Database.getConnection();
+            stat = Database.getConnection().createStatement();
+            rs = stat.executeQuery("select content from book where id=" + this.getId());
+            while (rs.next()){
+                this.setContent(rs.getBytes("content"));
+            }
+        }catch(SQLException ex){
+            System.out.println("error-------------------------  \n " + ex);
+        }finally{
+            try {
+                if(conn != null) conn.close();
+                if(stat != null) stat.close();
+                if(rs != null) rs.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AuthorList.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     
     
     

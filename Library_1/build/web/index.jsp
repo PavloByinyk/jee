@@ -23,7 +23,6 @@
                 <div style="width:50%;background:blue;padding-top: 10px; float:left; text-align: left"  >Joiking</div>
                 </div>
                 
-                
                 <div class="class1" style="padding: 20px">Put your name here 
                     <div style="float: left">
                         <input class="class1" type="text" name="username" value="" size="20"/>

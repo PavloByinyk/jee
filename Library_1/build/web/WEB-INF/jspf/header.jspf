@@ -36,19 +36,19 @@
             <div style="
                          position:relative;
                          padding: 15px;">
-                        <form>
+                        <form action="books.jsp">
                                 <input style="position: relative;
-                                       width: 85%" type="search" name="search">
+                                       width: 85%" type="search" name="search_string">
                             
                                 <div style="
                                      position: relative;
                                      width: 15%;
                                      float: right">
-                                    <input style="padding-right: 5px" type="submit" value="Search">
-                                    <select   id="select_data">
-                                        <option value="">Author name</option>
-                                        <option value="1">Value 1</option>
-                                        <option value="2">Value 2</option>
+                                    <input  style="padding-right: 5px" type="submit" value="Search">
+                                    <select   id="select_data" name="search_option">
+                                        <option value="Author">Author</option>
+                                        <option value="Book">Book</option>
+
                                     </select>
                                 </div>
                         </form>

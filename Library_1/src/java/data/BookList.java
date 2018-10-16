@@ -6,6 +6,7 @@
 package data;
 
 import database.Database;
+import enums.SearchType;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,6 +42,7 @@ public class BookList {
                 book.setAuthor(rs.getString("author"));
                 book.setPublisher(rs.getString("publisher"));
                 book.setImage(rs.getBytes("image"));
+                book.setId(rs.getInt("id"));
                 list.add(book);
             }
         }catch(SQLException ex){
@@ -72,5 +74,24 @@ public class BookList {
 "inner join genre g on b.genre_id=g.id\n" +
 "inner join publisher p on b.publisher_id=p.id\n" +
 "where genre_id= " + genreId +" order by b.name ");
+    }
+    
+        public ArrayList<Book> getBooksByLetter(String letter){
+        return getBooks("select b.id, b.name, b.isbn, b.page_count, b.publish_year, b.image image, p.name as publisher, a.fio as author, g.name as genre \n" +
+"from book as b\n" +
+"inner join author a on b.author_id=a.id\n" +
+"inner join genre g on b.genre_id=g.id\n" +
+"inner join publisher p on b.publisher_id=p.id\n" +
+"where b.name like '%" + letter + "%' order by b.name ");
+    }
+        
+            public ArrayList<Book> getBooksBySearch(String searchStr, SearchType searchType){
+                String where = searchType == SearchType.AUTHOR ? " a.fio " : " name ";
+        return getBooks("select b.id, b.name, b.isbn, b.page_count, b.publish_year, b.image image, p.name as publisher, a.fio as author, g.name as genre \n" +
+"from book as b\n" +
+"inner join author a on b.author_id=a.id\n" +
+"inner join genre g on b.genre_id=g.id\n" +
+"inner join publisher p on b.publisher_id=p.id\n" +
+"where " + where + "like '%" + searchStr.toLowerCase() +"%' order by b.name ");
     }
 }
