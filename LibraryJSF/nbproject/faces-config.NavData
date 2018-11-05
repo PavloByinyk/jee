@@ -2,7 +2,13 @@
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
-        <Node id="index.xhtml" x="174" y="260" zoom="true"/>
+        <Node id="index.xhtml" x="403" y="391" zoom="true"/>
+        <Node id="templates/content.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="templates/left_menu.xhtml" x="101" y="58" zoom="true"/>
+        <Node id="pages/books.xhtml" x="382" y="502" zoom="true"/>
+        <Node id="templates/library_template.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="templates/header.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="templates/footer.xhtml" x="128" y="142" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

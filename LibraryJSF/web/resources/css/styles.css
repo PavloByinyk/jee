@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.11.2018, 18:21:56
+    Author     : Gottgried
+*/
+
+.container{
+    width: 1000px;
+    background-color: bisque;
+    margin: 0 auto;
+    
+}
+.header{
+    height: 220px;
+    padding: 30px;
+    background-color: aqua
+}
+.desor{
+    float: left;
+    text-align: center;
+    background-color: background;
+    padding: 20px;
+}
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px
+}
+
+.img{  
+    width: 100px;
+    height: 100px
+}
+.welcome{
+    float: right;
+    background-color: yellowgreen
+    
+}
+.search_div{
+    position: relative;
+    float: left;
+    width: 95%;
+    position: relative;  
+    background-color: yellow
+
+        
+}
+
