@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.11.2018, 18:21:56
+    Author     : Gottgried
+*/
+
+.container{
+    width: 1000px;
+    height: 700px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+.header{
+    height: 130px;
+    padding: 30px;
+    background-color: #ece4e4;
+    position: relative;
+        
+}
+.desor{
+    float: left;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 600px;
+}
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px
+}
+
+.img{  
+    width: 100px;
+    height: 100px
+}
+.welcome{
+    float: right;
+    background-color: #dee7dc
+    
+}
+.search_div{
+    position: relative;
+    float: left;
+    width: 95%;
+    padding: 15px;
+    position: relative;  
+    background-color: #f7f2f2  
+}
+.search_string{
+    width: 700px;
+    margin-right:  10px
+}
+.search_button{
+    width: 100px
+}
+.middle{
+    width: 100%;
+    height: 435px;
+    position: relative;
+    background-color: #f5f3e4;
+
+}
+.left_menu{
+    width: 30%;
+    height: 98%;
+    background-color: #d9d9d9; 
+    float: left;
+    position: relative;
+}
+.left_menu h4{
+    text-align: center;
+}
+.content{
+    width: 70%;
+    height: 98%;
+    background-color: whitesmoke; 
+    position: relative;
+    float: right;
+    
+}
+.footer{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+h5{
+    text-align: right
+}
+
