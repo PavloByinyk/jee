@@ -5,18 +5,83 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			function valid(){
+				var state = $("input[name='sex']:checked").val();
+				if(!state) 
+					return $("#message").html("<font style='color:red'> Check something !</font><br/>");
+				else 
+					alert(state);
+					$("#message").hide();
+			}
+		
+		</script>
     </head>
     <body>
 		
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-		<hr/>
 		<div>
-		Команда разработчиков jQuery часто хвастается по поводу поддержки в этой библиотеке цепочки вызовов,
-		доходя до заявлений типа «jQuery создана для того, чтобы изменить ваш стиль программирования на JavaScript»
-		прямо на главной странице. Честно говоря, лично я нахожу эту технику скорее боковым ответвлением, чем дорогой в будущее,
-		но с радостью заявляю, что вы можете использовать jQuery, избежав длинных цепочек вызовов.
-		<div/>
+			<div style="width:50%; float:left; margin:10px;" >
+				
+				<p id='idP'>Hello world</p>
+				<p>Hello world</p>
+				<p>Hello world</p>
+				<hr/>
+				<div>
+				Команда разработчиков jQuery часто хвастается по поводу поддержки в этой библиотеке цепочки вызовов,
+				доходя до заявлений типа «jQuery создана для того, чтобы изменить ваш стиль программирования на JavaScript»
+				прямо на главной странице. Честно говоря, лично я нахожу эту технику скорее боковым ответвлением, чем дорогой в будущее,
+				но с радостью заявляю, что вы можете использовать jQuery, избежав длинных цепочек вызовов.
+				</div>
+				<br/>
+				
+				<input/> <br/> <br/>
+				<input/> <br/> <br/>
+				
+				<button id="countBtn">Count</button>
+				<button id="countBtn1" onclick="$('#countBtn1').hide()">Count</button>
+				<button id="countBtn2">get text</button>
+				
+				<form name="form" id="form">
+					<label for="female">Female</label>
+					<input type="radio" id="female" name="sex" value="female"/>
+					<label for="male">Male</label>
+					<input type="radio" id="male" name="sex" value="male"/>
+					
+					<br/><br/>
+					<span id="message"></span>
+					<input type="button" id="done" onclick="return valid()" value="Done"/>
+				
+				</form>
+			
+			</div>
+			
+			<div  style="margin:10px; float:left">
+			
+				<div>
+					<a href="#" id="show" style="display:none" onclick="none">Show comments<a/>
+					<a href="#" id="hide" onclick="none">Hide comments<a/>
+				</div>
+			
+				<div id="comments">
+					<p class="comment">Comment 1</p>
+					<p class="comment">Comment 2</p>
+					<p class="comment">Comment 3</p>
+				</div>
+				<form name="form" action="#" method="post" id="form" style="display:none" onsubmit="return false">
+					<textarea id="text_area" name="field"></textarea>
+					<br/>
+					<input type="submit" name="send" value="Add the comment(input)" id="done"></input>
+				</form>
+			
+				<a href="#" onclick="return false" id="add_comment">Add the comment(a)</a>
+				
+				
+				
+			
+			</div>
+		
+		
+		
+		</div>
     </body>
 </html>

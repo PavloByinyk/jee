@@ -3,3 +3,8 @@ p{
  padding: 7px;
  padding: 10px;
 }
+p.comment{
+ background-color: #EEEEEE;
+ padding: 7px;
+ padding: 10px;
+}
