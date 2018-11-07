@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package beans;
+package controllers;
 
+import beans.Genre;
 import db.Database;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -21,9 +22,9 @@ import javax.faces.bean.ManagedBean;
  *
  * @author Gottgried
  */
-@ManagedBean
+@ManagedBean(eager = true)
 @ApplicationScoped
-public class GenreList {
+public class GenreController {
     private ArrayList<Genre> list = new ArrayList<Genre>();
     
     private ArrayList<Genre> getGenres(){

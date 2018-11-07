@@ -21,7 +21,7 @@
             
             <div class="welcome">
                 <h5>#{msg.welcome_title}</h5>
-                <h6>#{msg.welcome_title}, here mast be the Name</h6>
+                <h6>,#{user.name}</h6>
             </div>
             
             <div class="search_div">
@@ -34,7 +34,18 @@
                 </h:form>
             </div>
             
+            <div class="letters">
+                <h:form>
+                    <ui:repeat value="#{letterList.russianLetters}" var="letter">
+                        <h:commandLink value="#{letter}" style="text-decoration:none;color:red; padding-left: 15px; padding-right: 15px"></h:commandLink>
+            </ui:repeat>
+            </h:form>
+            </div>
+            
+            
         </ui:composition>
+        
+        
 
     </h:body>
 </html>

@@ -17,7 +17,7 @@ and open the template in the editor.
     position: relative;
 }
 .header{
-    height: 130px;
+    height: 200px;
     padding: 30px;
     background-color: #ece4e4;
     position: relative;
@@ -50,7 +50,6 @@ and open the template in the editor.
     float: left;
     width: 95%;
     padding: 15px;
-    position: relative;  
     background-color: #f7f2f2  
 }
 .search_string{
@@ -95,5 +94,27 @@ and open the template in the editor.
 
 h5{
     text-align: right
+}
+
+
+.genres a:hover, a:active, a:focus{
+    background-color: #FFFFFF;
+    color: #999;
+}
+.genres a, a:visited{
+    padding: 3px 3px 3px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.letters{
+    position: relative;
+    float: left;
+    text-align: center;
+    
+}
+link{
+    font-family: fantasy;
+   text-decoration:none;color:red
 }
 

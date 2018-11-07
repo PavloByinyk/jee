@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
     </h:head>
@@ -13,10 +14,12 @@
             <h4>#{msg.genres}</h4>
             
             
-            <h:dataTable value="#{genreList.genresList}" var="g">
+            <h:dataTable value="#{genreController.genresList}" var="g" styleClass="genres">
                 
                 <h:column>
-                    #{g.name}
+                    <h:link value="#{g.name}">
+                        <f:param name="genre_id" value="#{g.id}"/>
+                    </h:link>
                 </h:column>
                     
                 
