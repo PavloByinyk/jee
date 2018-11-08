@@ -7,6 +7,7 @@ package controllers;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.context.FacesContext;
 
 /**
  *
@@ -21,5 +22,10 @@ public class LoginController {
     
     public String login(){
         return "books";
+    }
+    
+    public String exit(){
+        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+        return "exit";
     }
 }
