@@ -17,9 +17,11 @@
             <h:dataTable value="#{genreController.genresList}" var="g" styleClass="genres">
                 
                 <h:column>
-                    <h:link value="#{g.name}">
+                    <h:form>
+                    <h:commandLink action="#{searchController.fillBooksByGenre()}" value="#{g.name}">
                         <f:param name="genre_id" value="#{g.id}"/>
-                    </h:link>
+                    </h:commandLink>
+                    </h:form>
                 </h:column>
                     
                 

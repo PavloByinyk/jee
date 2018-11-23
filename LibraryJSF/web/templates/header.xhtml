@@ -20,14 +20,16 @@
             </div>
             
             <div class="welcome">
-                <h5>#{msg.welcome_title}</h5>
-                <h6>,#{user.name}</h6>
+                <h:form>
+                    <h5>#{msg.welcome_title} ,#{user.name}</h5>
+                    <h:commandLink action="#{loginController.exit()}" value="Exit"></h:commandLink>
+                </h:form>
             </div>
             
             <div class="search_div">
                 <h:form styleClass="search_form">
-                    <h:inputText id="search_string" styleClass="search_string"/>
-                    <h:commandButton value="#{msg.msg_search}" styleClass="search_button"/>
+                    <h:inputText id="search_string" styleClass="search_string" value="#{searchController.searchString}"/>
+                    <h:commandButton value="#{msg.msg_search}" action="#{searchController.fillBooksBySearch()}" styleClass="search_button"/>
                     <h:selectOneMenu value="#{searchController.searchType}">
                         <f:selectItems value="#{searchController.searchList}"/>
                     </h:selectOneMenu>
@@ -37,8 +39,11 @@
             <div class="letters">
                 <h:form>
                     <ui:repeat value="#{letterList.russianLetters}" var="letter">
-                        <h:commandLink value="#{letter}" style="text-decoration:none;color:red; padding-left: 15px; padding-right: 15px"></h:commandLink>
-            </ui:repeat>
+                        <h:commandLink action="#{searchController.fillBooksByLetter()}" value="#{letter}" 
+                                       style="text-decoration:none;color:red; padding-left: 15px; padding-right: 15px">
+                            <f:param name="letter" value="#{letter}"/>
+                        </h:commandLink>
+                     </ui:repeat>
             </h:form>
             </div>
             

@@ -46,13 +46,13 @@ public class GenreController {
         }catch(SQLException ex){
             System.out.println("error-------------------------  \n " + ex);
         }finally{
-            try {
-                if(conn != null) conn.close();
-                if(stat != null) stat.close();
-                if(rs != null) rs.close();
-            } catch (SQLException ex) {
-               // Logger.getLogger(AuthorList.class.getName()).log(Level.SEVERE, null, ex);
-            }
+//            try {
+////                if(conn != null) conn.close();
+////                if(stat != null) stat.close();
+////                if(rs != null) rs.close();
+//            } catch (SQLException ex) {
+//               // Logger.getLogger(AuthorList.class.getName()).log(Level.SEVERE, null, ex);
+//            }
         }
         return list;
     }
@@ -61,12 +61,12 @@ public class GenreController {
         if(!list.isEmpty()){
             return list;
         }else{
-//            return getGenres();
+            return getGenres();
+        }
+//        for(int i = 0; i <= 10; i++){
+//            list.add(new Genre("Pos " + i));
 //        }
-        for(int i = 0; i <= 10; i++){
-            list.add(new Genre("Pos " + i));
-        }
-        return list;
-        }
+        //return list;
+        //}
     }
 }
