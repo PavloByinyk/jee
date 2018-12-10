@@ -18,8 +18,10 @@
                 
                 <h:column>
                     <h:form>
-                    <h:commandLink action="#{searchController.fillBooksByGenre()}" value="#{g.name}">
+                        
+                        <h:commandLink value="#{g.name}" styleClass="#{g.id == bookListController.selectedGenreId ? 'selected_page':''}">
                         <f:param name="genre_id" value="#{g.id}"/>
+                        <f:ajax onevent="showProgress" event="click" render=":lettersForm :booksList @form :pager" listener="#{bookListController.fillBooksByGenre()}"/>
                     </h:commandLink>
                     </h:form>
                 </h:column>

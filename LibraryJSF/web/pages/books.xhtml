@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
     </h:head>
@@ -15,14 +16,68 @@
             </ui:define>
             
             <ui:define name="content">
+                <h:form id="booksForm">
+                    <p>#{msg.msg_books_count}  #{bookListController.currentBookList.size()}</p>
+                    #{param.genre_id}
+
+                    <h:panelGroup id ="admin_tools">  
+
+                            <h:commandLink rendered="#{!bookListController.editMode}">
+                                <h:outputText value="Добавить книгу"></h:outputText>
+                                <f:ajax onevent="showProgress" execute="@form" render="@form" />
+                            </h:commandLink>  
+
+                            <h:commandLink action="#{bookListController.switchEditMode}" rendered="#{!bookListController.editMode}">
+                                <h:outputText value="Редактировать"></h:outputText>
+                                <f:ajax onevent="showProgress" execute="@form" render="@form" />
+                            </h:commandLink>  
+
+                            <h:commandButton action="#{bookListController.updateBooks()}" rendered="#{bookListController.editMode}" value="Зберегти">
+
+                            </h:commandButton>  
+
+                            <h:commandButton immediate="true" action="#{bookListController.switchEditMode()}" rendered="#{bookListController.editMode}" value="Выдмынити">
+
+                            </h:commandButton>  
+
+                        </h:panelGroup>
+
+
+                    <h:panelGroup id="booksList">
+                        <br/>
+                        <ui:repeat  value="#{bookListController.currentBookList}" var="book">
+                            <br/>
+                            <h:graphicImage value="/ShowImage?id=#{book.id}" width="40px" height="40px"></h:graphicImage>
+                            
+                             <strong>books name: </strong>
+                             <h:outputText value="#{book.name}" rendered="#{!bookListController.editMode}"/>
+                             <h:inputText value="#{book.name}" styleClass="name_edit" rendered="#{bookListController.editMode}"/>
+                            
+                            <h:outputLink styleClass="save_link" value="#{request.contextPath}/SavePdf" target="_blank" rendered="#{bookListController.editMode}">
+                                <h:outputText value="download"></h:outputText>
+                                <f:param name="id" value="#{book.id}"></f:param>
+                            </h:outputLink>
+                         </ui:repeat>
+                    </h:panelGroup>
                 
-                <p>#{msg.msg_books_count}  #{searchController.currentBookList.size()}</p>
-                #{param.genre_id}
                 
-                <ui:repeat value="#{searchController.currentBookList}" var="book">
-                    <h:graphicImage value="/ShowImage?id=#{book.id}" width="40px" height="40px"></h:graphicImage>
-                 </ui:repeat>
+                </h:form>
             </ui:define>
+            
+             <ui:define name="pager">
+                 <h:panelGroup id="pager">
+                    <h:form  rendered="#{bookListController.totalBooksCount>bookListController.booksOnPage}">
+                        #{msg.msg_pages}
+                        
+                        <ui:repeat value="#{bookListController.pageNumbers}" var="pageNumber" >
+                            <h:commandLink value="#{pageNumber}" action="#{bookListController.selectPage()}" styleClass="#{pageNumber == bookListController.selectedPageNumber ? 'selected_page':''}">
+                                <f:param name="page_number" value="#{pageNumber}" />
+                            </h:commandLink>
+                        </ui:repeat>
+                        
+                    </h:form>
+                     </h:panelGroup>
+                </ui:define>
             
         </ui:composition>
         

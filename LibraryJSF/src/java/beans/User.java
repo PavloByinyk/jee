@@ -17,6 +17,7 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class User {
     private String username;
+    private String password;
 
     public User() {
     }
@@ -29,6 +30,12 @@ public class User {
         this.username = username;
     }
     
-    
+        public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
     
 }

@@ -4,6 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
+        <h:outputScript library="js" name="javascript.js" target="head"/>
         <title>Facelet Title</title>
     </h:head>
     <h:body>
@@ -20,14 +21,22 @@
                 <div class="class1" style="padding: 20px">Put your name here 
                     <div style="float: left">
                         <h:inputText class="class1" id="username" value="#{user.name}" required="true" requiredMessage="#{msg.msg_set_name}" size="20">
-                            <f:validator validatorId="validators.LoginValidator"></f:validator>
-                            
+<!--                            <f:validator validatorId="validators.LoginValidator"></f:validator>
+                            <f:ajax event="keyup" render="loginError"></f:ajax>-->
                         </h:inputText>
+                        
+                        <br/>
+                        
+                        <h:inputSecret id="password" value="#{user.password}" required="true" redisplay="true" requiredMessage="need password"></h:inputSecret>
                     </div>
                 </div>
                 
                 <div style="clear: both">
-                    <h:commandButton class="class1" action="#{loginController.login()}" value="Sign in"/>
+                    <h:commandButton class="class1" action="#{loginController.login()}" value="Sign in" onclick="return checkValue(this.form, '#{msg.msg_login_error}')"/>
+                </div>
+                
+                <div>
+                    <h:message id="loginError" for="username"></h:message>
                 </div>
             </div>
         </h:form>

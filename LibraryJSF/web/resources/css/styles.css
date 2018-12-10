@@ -118,3 +118,7 @@ link{
    text-decoration:none;color:red
 }
 
+.pager .selected_page{
+    color: red;
+}
+

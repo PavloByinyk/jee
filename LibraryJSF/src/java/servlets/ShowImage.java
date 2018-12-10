@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package servlets;
-import controllers.SearchController;
+import controllers.BookListController;
 import java.io.IOException;
 import java.io.OutputStream;
 import javax.servlet.ServletException;
@@ -36,7 +36,7 @@ public class ShowImage extends HttpServlet {
         try {
             int id = Integer.valueOf(request.getParameter("id"));
             
-            SearchController searchController = (SearchController)request.getSession(false).getAttribute("searchController");
+            BookListController searchController = (BookListController)request.getSession(false).getAttribute("searchController");
             
             byte[] image = searchController.getImage(id);         
             response.setContentLength(image.length);
