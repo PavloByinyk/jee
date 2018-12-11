@@ -7,29 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d33cdd46-e9f9-4807-b7d2-3087eccf0755" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages_ru.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/nbproject/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/controllers/BookListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages_en_GB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/nls/messages_ru_RU.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/src/java/servlets/ShowImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/src/java/servlets/ShowImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/pages/books.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/pages/books.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/templates/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/templates/header.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/templates/left_menu.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/templates/left_menu.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryJSF/web/templates/library_template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../LibraryJSF/web/templates/library_template.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library_1/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_1/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library_1/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_1/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library_1/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_1/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library_1/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_1/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Library_1/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library_1/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/dao/TestUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/dao/TestUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-3.2.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/views/hello.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/WEB-INF/views/hello.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ITVDN-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/youtube/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/config/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/youtube/config/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/youtube/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/dao/TestUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/youtube/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/youtube/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/youtube/service/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,22 +57,88 @@
       <FILTER>com.youtube.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itvdn: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itvdn: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="471">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="136">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="34" column="126" selection-start-line="34" selection-start-column="126" selection-end-line="34" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1544550970828" expanded="true" signature="1304:1400" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +147,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,31 +156,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createUser.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="136">
+              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="69">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,28 +177,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/TestUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +189,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/service/UserServiseimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="374">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -166,16 +234,31 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/youtube/dao/TestUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youtube/App.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/service/UserServiseimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showUser.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showUser.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createUser.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createUser.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -267,7 +350,52 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
@@ -287,7 +415,20 @@
             <path>
               <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITVDN" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITVDN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -357,6 +498,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -364,11 +506,21 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="itvdn" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Games\programming\java EE\brovko\ITVDN\src\main\webapp\WEB-INF\views" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.youtube.mapper" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -489,12 +641,18 @@
       <option name="presentableId" value="Default" />
       <updated>1544441541583</updated>
       <workItem from="1544441548058" duration="9125000" />
-      <workItem from="1544465717128" duration="653000" />
+      <workItem from="1544465717128" duration="1397000" />
+      <workItem from="1544467122116" duration="121000" />
+      <workItem from="1544467343631" duration="953000" />
+      <workItem from="1544525262774" duration="7574000" />
+      <workItem from="1544533896940" duration="491000" />
+      <workItem from="1544534498020" duration="323000" />
+      <workItem from="1544535474245" duration="12978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9778000" />
+    <option name="totallyTimeSpent" value="32962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,35 +665,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49837488" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21668473" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20260021" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.2156013" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.1787649" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49763033" visible="true" weight="0.1663113" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.22974414" />
+      <window_info anchor="right" id="Maven" order="2" sideWeight="0.49763033" weight="0.28624734" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Coverage" order="7" sideWeight="0.50236964" side_tool="true" weight="0.32995737" />
     </layout>
@@ -547,86 +707,38 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java</url>
-          <line>14</line>
-          <properties class="com.youtube.config.WebAppInitializer" method="onStartup">
+          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDaoImpl.java</url>
+          <line>27</line>
+          <properties class="com.youtube.dao.UserDaoImpl" method="getById">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java</url>
-          <line>16</line>
-          <properties class="com.youtube.config.WebConfig" method="getViewResolver">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java</url>
-          <line>25</line>
-          <properties class="com.youtube.config.WebConfig" method="getFreeMarkerConfigurer">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java</url>
-          <line>10</line>
-          <properties class="com.youtube.config.SpringConfig" method="getTestuser">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java</url>
-          <line>11</line>
-          <properties class="com.youtube.controller.UserController" method="hello">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java</url>
-          <line>10</line>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDaoImpl.java</url>
+          <line>28</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>SELECT * FROM user WHERE id=1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/ServletRegistration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -635,68 +747,111 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/App.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/TestUser.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/javax/sql/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="163">
+          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.10.RELEASE/spring-jdbc-4.3.10.RELEASE.jar!/org/springframework/jdbc/datasource/DriverManagerDataSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="102">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="816">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="526" column="88" lean-forward="true" selection-start-line="526" selection-start-column="88" selection-end-line="526" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/TestUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c/schema/itvdn/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="986">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
@@ -707,10 +862,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showUser.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createUser.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/service/UserServiseimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/config/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="126" selection-start-line="34" selection-start-column="126" selection-end-line="34" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1544550970828" expanded="true" signature="1304:1400" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youtube/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

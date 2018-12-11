@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    HELLO
+
 </head>
 <body>
+    <h1>HELLO</h1>
+    <a href="users"> Show all users</a>
 
 </body>
 </html>

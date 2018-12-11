@@ -1,0 +1,10 @@
+com\youtube\entity\User.class
+com\youtube\dao\UserDaoImpl.class
+com\youtube\controller\UserController.class
+com\youtube\service\UserService.class
+com\youtube\config\WebConfig.class
+com\youtube\config\WebAppInitializer.class
+com\youtube\dao\UserDao.class
+com\youtube\mapper\UserMapper.class
+com\youtube\service\UserServiseimpl.class
+com\youtube\config\SpringConfig.class
