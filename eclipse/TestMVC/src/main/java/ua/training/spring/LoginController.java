@@ -1,6 +1,9 @@
 package ua.training.spring;
 
 
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -17,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.support.RequestContextUtils;
 
 import ua.training.objects.User;
 
@@ -32,23 +37,35 @@ public class LoginController {
 	
 	
 	@RequestMapping(value = "/check-user", method = RequestMethod.POST)
-	public String checkUser(@Valid @ModelAttribute("user") User user, BindingResult bindingResult, Model model) {
+	public String checkUser(@Valid @ModelAttribute("user") User user, BindingResult bindingResult, Model model, RedirectAttributes rattr) {
 		if(bindingResult.hasErrors()) {
+			System.out.println("checkUser bindingResult.hasErrors()");
 			return "login";
 		}
+		rattr.addFlashAttribute("key", "someValue");
 		System.out.println("checkUser");
 //		ModelAndView modelAndView = new ModelAndView();
 //		modelAndView.setViewName("main");
 //		modelAndView.addObject("user", user);	
 		
-		model.addAttribute("user", user);
+		//model.addAttribute("user", user);
 		//return new ModelAndView("main", "user", user); 
+		return "redirect:/main";
+	}
+	
+	
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
+	public String goMainPage(HttpServletRequest request) {
+		System.out.println("goMainPage");
+		Map<String, ?> map = RequestContextUtils.getInputFlashMap(request);
+		
 		return "main";
 	}
 	
+	
 	@RequestMapping(value = "/failed", method = RequestMethod.GET)
 	public ModelAndView failed() {
-		//System.out.println("failed");
+		System.out.println("failed");
 		return new ModelAndView("login-failed", "message", "Login failed!");
 	}
 	
