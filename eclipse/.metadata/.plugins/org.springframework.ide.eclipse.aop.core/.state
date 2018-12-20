@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="RobotSpring2"/>
+<aop-project name="TestMVC"/>
+<aop-project name="SpringDB_33"/>
+</aop-reference-model>

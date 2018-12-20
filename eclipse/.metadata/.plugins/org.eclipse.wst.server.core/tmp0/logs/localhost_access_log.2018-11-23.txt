@@ -1,0 +1,1 @@
+0:0:0:0:0:0:0:1 - - [23/Nov/2018:08:45:14 +0200] "GET /springMVC/get-json-user?name=aaa HTTP/1.1" 200 55
