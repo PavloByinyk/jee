@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-test-app:war" />
+      <artifact name="spring-test-app:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8e5f05a-e94b-48b5-abca-3ad7df7dfa30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c/storage_v2/_src_/schema/library.uyToCQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c/storage_v2/_src_/schema/world.khvBBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/config/DataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/entity/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/entity/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/entity/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/entity/enums/WorkerStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/repository/BankAccountRepositroy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/repository/BankRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/repository/WorkerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/service/BankAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/service/BankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/service/WorkerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/java/com/def/datajpa/service/impl/BankServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPA/src/main/resources/app.propeties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/SpringRESTEx.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/java/rootpackage/config/Initializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/java/rootpackage/config/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/java/rootpackage/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/java/rootpackage/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/java/rootpackage/entity/MyDataObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/webapp/WEB-INF/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/classes/rootpackage/config/Initializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/classes/rootpackage/config/WebAppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/classes/rootpackage/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/classes/rootpackage/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/classes/rootpackage/entity/MyDataObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-context-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-core-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-web-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-3.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/SpringRESTEx-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/classes/rootpackage/config/Initializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/classes/rootpackage/config/WebAppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/classes/rootpackage/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/classes/rootpackage/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/classes/rootpackage/entity/MyDataObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRESTEx/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.mylyn/.taskListIndex/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.mylyn/.taskListIndex/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.mylyn/repositories.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/28/c0a877a042f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/2d/60da610f40f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/2d/80609ef865f1001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/48/409fa36544f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/6d/60e01c7e66f1001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/7b/4032e52843f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/84/b06a65af43f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/9a/20f8475767f1001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/b5/50fce8b065f1001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/ba/7048cd3a44f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/fa/a0ed85f065f1001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.history/ff/3086ea4942f2001817e5a2d2846383a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/RobotSpring2/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/RobotSpring2/.markers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/RobotSpring2/org.eclipse.egit.core/GitProjectData.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/RobotSpring2/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/org.eclipse.egit.core/GitProjectData.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/SpringDB_33/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/SpringDB_33/.location" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/SpringDB_33/.markers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/SpringDB_33/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.indexes/e4/b9/22/8c/da/f3/history.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.indexes/e4/b9/b3/a8/6e/history.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.indexes/e4/b9/b3/a8/f3/1c/history.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.indexes/history.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/.markers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/org.eclipse.egit.core/GitProjectData.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/TestMVC/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.markers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/8.tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/Cloud Foundry.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ajdt.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ide.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.mpc.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.debug.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.junit.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.server.tomcat.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.java.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.api.tools.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.recommenders.completion.rcp.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.css.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.debug.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.web.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.discovery.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.sse.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.ws.service.policy.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.config.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.imports.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.metadata.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.configurator.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.frameworks.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.dashboard.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.debug.core/.launches/Start.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.debug.core/.launches/TestMVC.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.debug.core/.launches/Tomcat v7.0 Server at localhost.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.e4.ui.workbench.swt/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/http-cache.lucene60/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/http-cache.lucene60/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history.lucene60/_0.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history.lucene60/_0.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history.lucene60/_0.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history.lucene60/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history.lucene60/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/server-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache.lucene60/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache.lucene60/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history.lucene60/_0.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history.lucene60/_0.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history.lucene60/_0.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history.lucene60/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history.lucene60/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.epp.mpc.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.equinox.p2.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1024388723.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1039148540.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1063643129.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1075841238.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1092723579.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1096042110.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1101913381.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1127635871.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1139102600.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1217813338.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1228297924.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1263813144.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1286845392.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1318599438.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1339122699.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1366153159.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1379991324.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1408211338.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1432368442.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/144985264.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1470073441.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/150186794.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1573783449.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1618589155.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/166212938.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1680926887.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1704165723.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1748083008.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1765399094.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1777791204.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1801894473.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1850623505.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/1879832654.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/201298267.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2026426829.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2044223976.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2056156432.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2174126384.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2224678206.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2244292019.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2291427199.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2365264807.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2382091312.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2422081231.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2425155787.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2463378545.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2504516102.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2508532056.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2509800163.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2516439489.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2529626867.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2535479082.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/253960820.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2561917446.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2593034408.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2608956375.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/266867113.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2688783450.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2762107436.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2780386806.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/282842088.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2838406352.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2897796968.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/289811613.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2951431056.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/2958098954.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/303705155.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3065053440.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3162145013.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3229358039.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3370686214.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3377541906.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3530971803.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3677362244.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3689256499.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3745960157.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3767767424.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3780270305.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3786438684.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3788163443.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3829216874.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3837711894.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3846872715.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3865153757.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3894941320.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/3968011161.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/405851205.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4059027058.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4064094147.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4135739217.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4140100362.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4157495657.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/415811476.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/4190549067.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/460209847.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/508748054.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/51368389.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/553647614.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/575557243.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/611048125.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/61436394.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/62538100.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/637837850.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/643051158.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/644965649.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/664140773.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/702765999.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/741873279.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/74613027.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/752481128.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/76525879.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/767842954.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/822980084.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/826932535.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/885142573.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/973976658.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/index.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/indexNamesMap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/participantsIndexNames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.debug.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3993829387.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/taglibindex/3377541906.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/translators/1021122226.translator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/translators/2024575635.translator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/translators/982655136.translator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/RobotSpring2/2018/11/46/refactorings.history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/RobotSpring2/2018/11/46/refactorings.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/TestMVC/2018/11/47/refactorings.history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/TestMVC/2018/11/47/refactorings.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/TestMVC/2018/11/48/refactorings.history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/TestMVC/2018/11/48/refactorings.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_2.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_2_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_3.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_3_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_4.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_4_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_5.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_5_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_6.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments_8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a_3.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_b.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_c.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_d.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_e.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_e_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_f.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_78.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_78_1.del" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_79.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7a.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7b.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7c.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7d.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7e.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/_7f.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/segments.gen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/segments_6r" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/nexus/f996d9839a616aaa2b1c9e7c1a70956a/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.jdt/RobotSpring2.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.jdt/SpringDB_33.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.jdt/TestMVC.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.9.1.20180912-1601.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.pde.core/.local_targets/1542797594831.target" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.pde.core/SavedExternalPluginList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.pde.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.rse.core/.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.tm.terminal.view.ui/.executables/data.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.editors/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.intro/introstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.internet.cache/256285770.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.internet.cache/cache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/1817634123.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/1915681996.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/2013113688.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/3186554279.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/3377541906.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/891077015.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/baseBrowserLibrary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/browserWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/dom5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/system.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.web.core/jssearch/3993829387.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/monitors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/catalina.policy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/catalina.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/logs/localhost_access_log.2018-11-21.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/logs/localhost_access_log.2018-11-22.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/logs/localhost_access_log.2018-11-23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/logs/localhost_access_log.2018-11-26.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/logs/localhost_access_log.2018-11-27.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/publish.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/login_002dfailed_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/login_002dfailed_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/login_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/main_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/springMVC/org/apache/jsp/WEB_002dINF/views/main_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/META-INF/maven/ua.training/springMVC/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/META-INF/maven/ua.training/springMVC/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/classes/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/classes/ua/training/interceptors/CheckUsersInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/classes/ua/training/objects/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/classes/ua/training/spring/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/classes/ua/training/spring/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/classmate-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/hibernate-validator-5.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jackson-core-2.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jackson-databind-2.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/javax.inject-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/log4j-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-aop-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-beans-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-context-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-context-support-3.1.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-context-support-3.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-core-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-expression-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-jcl-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-web-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/locales/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/locales/messages_ru.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/views/login-failed.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/views/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TestMVC/resources/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.sse.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.validation/dep.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.xml.core/default_catalog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.aop.core/.state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core.metadata/metadata/.state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core.metadata/properties/.state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/-677243155.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/-677251483.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/1996968550.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/1997774629.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/422365330.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/480354795.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/480593282.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/480641023.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.core/images/670890433.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springframework.ide.eclipse.beans.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.content.core/content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/bootstrap/css/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/bootstrap/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/flexbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/fontcustom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/highlight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/homepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/markdown-content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/panes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/projects.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/tools.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/css/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/font-custom/fontcustom.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/blog_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/bug_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/comparison_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/compass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/compass_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/extension.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/extension_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/forum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/forum_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/guides.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/guides_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/logo_bigleaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/logo_spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/logo_sts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/new_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/overlay-incoming.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/spring-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/springdocs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/img/springdocs_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/js/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/js/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/js/guide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/common/js/modernizer.flexbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1542787168120/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.blogs/-549550714.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.update/623127801.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/content/org.springframework.templates.mvc-3.2.2/template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/content/org.springframework.templates.mvc-3.2.2/template.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/content/org.springframework.templates.mvc-3.2.2/wizard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.java-1.0.1/tempate.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.java-1.0.1/template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.java-1.0.1/wizard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.maven-1.0.1/template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.maven-1.0.1/template.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.maven-1.0.1/wizard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.web.maven-1.1.1/template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.web.maven-1.1.1/template.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/.sts/simpleprojects/org.springframework.templates.simple.spring.web.maven-1.1.1/wizard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.metadata/version.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/caches/identified-project-coordinates.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/caches/manual-mappings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.fdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.fdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.fnm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.frq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.nrm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.prx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.tii" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/_2.tis" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/segments.gen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/segments_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/230ffeb4-9774-493a-b6fd-2756de6bd356.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springtestapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/logback-classic-1.0.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/logback-core-1.0.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-aop-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-beans-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-context-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-core-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-expression-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-web-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/lib/spring-webmvc-4.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/ITVDN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDataJPA/SpringDataJPA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/src/main/webapp/WEB-INF/views/showUser.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/src/main/webapp/WEB-INF/views/showUser.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/classes/com/youtube/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/views/showUser.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/ITVDN-1.0-SNAPSHOT/WEB-INF/views/showUser.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/classes/com/youtube/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/classes/com/youtube/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITVDN/target/classes/com/youtube/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/target/classes/com/youtube/dao/UserDaoImpl.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itvdn: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itvdn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itvdn: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="ideas: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="64" lean-forward="true" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="e#1381#1387#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mvc</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/MyController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-3.1.1.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tag/layout.tag" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-test-app Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-test-app Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-grid.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-reboot.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="tags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../soursesLibrary/levelp/spring-demonstration" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.levelp.spring.service" />
+      <recent name="com.levelp.spring.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Games\programming\java EE\brovko\springtestapp\src\main\webapp\assets\fonts" />
+      <recent name="F:\Games\programming\java EE\brovko\springtestapp\src\main\webapp\WEB-INF\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Games\programming\java EE\brovko\springtestapp\src\main\webapp\assets\js" />
+      <recent name="F:\Games\programming\java EE\brovko\springtestapp\src\main\webapp\assets\css" />
+      <recent name="D:\escape\ee\jee\springtestapp\src\main\webapp\WEB-INF" />
+      <recent name="D:\escape\ee\jee\springtestapp\src\main\webapp\WEB-INF\pages" />
+      <recent name="D:\escape\ee\jee\springtestapp\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-test-app:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+        <artifact name="spring-test-app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_test_app_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springtestapp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61879" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-test-app:war exploded" />
+          <artifact name="spring-test-app:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springtestapp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_springtestapp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61879" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springtestapp:war exploded" />
+          <artifact name="springtestapp:war" />
+          <artifact name="spring-test-app:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8e5f05a-e94b-48b5-abca-3ad7df7dfa30" name="Default Changelist" comment="" />
+      <created>1545142534183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545142534183</updated>
+      <workItem from="1545142539446" duration="14494000" />
+      <workItem from="1545590310947" duration="6681000" />
+      <workItem from="1545660364138" duration="6778000" />
+      <workItem from="1545742301240" duration="10936000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38889000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26002166" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3726977" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.16576381" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.24377032" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.29264393" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.28731343" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java</url>
+          <line>27</line>
+          <properties class="com.levelp.spring.dao.IdeasDAOImpl" method="updateIdea">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java</url>
+          <line>50</line>
+          <properties class="com.levelp.spring.dao.IdeasDAOImpl" method="getIdea">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>44</line>
+          <properties class="com.levelp.spring.controller.MyController" method="updateIdeaForm">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>51</line>
+          <properties class="com.levelp.spring.controller.MyController" method="updateIdea">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>idea</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controllers.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.5.RELEASE/spring-beans-4.1.5.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/javax/persistence/GenerationType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.5.Final/hibernate-core-4.2.5.Final.jar!/org/hibernate/SessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/230ffeb4-9774-493a-b6fd-2756de6bd356/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://230ffeb4-9774-493a-b6fd-2756de6bd356/schema/itvdn/table/ideas">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.5.Final/hibernate-core-4.2.5.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/c.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="230" column="4" selection-start-line="230" selection-start-column="4" selection-end-line="230" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/jquery-3.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="2580" column="33" selection-start-line="2580" selection-start-column="33" selection-end-line="2580" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="64" lean-forward="true" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="1993" column="1" selection-start-line="1993" selection-start-column="1" selection-end-line="1993" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#1381#1387#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>springtestapp:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|springtestapp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

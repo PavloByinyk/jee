@@ -1,0 +1,6 @@
+com\levelp\spring\service\IdeasService.class
+com\levelp\spring\model\Idea.class
+com\levelp\spring\service\IdeasServiceImpl.class
+com\levelp\spring\controller\MyController.class
+com\levelp\spring\dao\IdeasDAO.class
+com\levelp\spring\dao\IdeasDAOImpl.class

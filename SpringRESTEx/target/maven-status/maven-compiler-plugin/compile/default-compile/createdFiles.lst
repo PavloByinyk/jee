@@ -1,0 +1,5 @@
+rootpackage\config\WebAppConfig.class
+rootpackage\controller\IndexController.class
+rootpackage\entity\MyDataObject.class
+rootpackage\config\Initializer.class
+rootpackage\controller\MainController.class
