@@ -16,7 +16,7 @@
             </div>
             <form:hidden path="id"/>
             <button type="submit" class="btn btn-success">Сохранить</button>
-            <a href="list" class="danger-link">Отмена</a>
+            <a href="hello" class="danger-link">Отмена</a>
         </form:form>
 
     </div>

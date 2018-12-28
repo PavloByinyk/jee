@@ -28,8 +28,8 @@
                             <span class="glyphicon glyphicon-triangle-bottom idea-dislikes-button" title="Не нравится"></span>
                         </span>
                         <span class="idea-edit-block ">
-                            <a href="update?id=${item.id}" title="Редактировать" class="idea-edit"><span class="glyphicon glyphicon-pencil"></span></a>
-                            <a href="delete?id=${item.id}" title="Удалить" class="idea-delete"><span class="glyphicon glyphicon-remove"></span></a>
+                            <a href="update?id=${item.id}" title="Редактировать" class="idea-edit"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+                            <a href="delete?id=${item.id}" title="Удалить" class="idea-delete"><span class="glyphicon glyphicon-remove"></span>Delete</a>
                         </span>
 
                     </div>

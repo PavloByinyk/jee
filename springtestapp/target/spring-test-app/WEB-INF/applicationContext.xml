@@ -40,6 +40,7 @@
 
     <bean id="ideasDao" class="com.levelp.spring.dao.IdeasDAOImpl"></bean>
     <bean id="ideasService" class="com.levelp.spring.service.IdeasServiceImpl"></bean>
+    <!--<bean id="registrationService" class="com.levelp.spring.service.RegistrationServiceImpl"></bean>-->
     <!--<bean id="messageSource"-->
           <!--class="org.springframework.context.support.ResourceBundleMessageSource">-->
         <!--<property name="basename" value="messages" />-->
