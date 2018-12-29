@@ -7,42 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e5f05a-e94b-48b5-abca-3ad7df7dfa30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/WEB-INF/pages/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-test-app/assets/css/bootstrap.min.css.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,11 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding>
-                <marker date="1545817244121" expanded="true" signature="0:907" ph="..." />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -137,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="1615">
               <caret line="95" selection-start-line="95" selection-end-line="99" selection-end-column="17" />
             </state>
           </provider>
@@ -216,8 +178,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1912" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -228,8 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,6 +241,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,11 +457,12 @@
       <workItem from="1545902587532" duration="1004000" />
       <workItem from="1545905771759" duration="1372000" />
       <workItem from="1546008485356" duration="1559000" />
+      <workItem from="1546086472702" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46499000" />
+    <option name="totallyTimeSpent" value="46542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,9 +474,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -803,20 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/RegistrationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -834,24 +784,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="95" selection-start-line="95" selection-end-line="99" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -869,20 +833,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding>
-            <marker date="1545817244121" expanded="true" signature="0:907" ph="..." />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="53" />
+        <state relative-caret-position="1615">
+          <caret line="95" selection-start-line="95" selection-end-line="99" selection-end-column="17" />
         </state>
       </provider>
     </entry>

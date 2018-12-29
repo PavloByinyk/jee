@@ -1,0 +1,4 @@
+vwmarketbackend\dao\CategoryDao.class
+vwmarketbackend\daoimpl\CategoryDaoImpl.class
+vwmarketbackend\dto\Category.class
+vwmarketbackend\App.class
