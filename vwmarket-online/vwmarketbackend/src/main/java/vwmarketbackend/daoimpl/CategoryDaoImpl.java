@@ -1,12 +1,20 @@
 package vwmarketbackend.daoimpl;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import vwmarketbackend.dao.CategoryDao;
 import vwmarketbackend.dto.Category;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class CategoryDaoImpl implements CategoryDao {
+
+    @Autowired
+    public SessionFactory sessionFactory;
 
     public  static List<Category> list = new ArrayList<>();
 
@@ -22,8 +30,28 @@ public class CategoryDaoImpl implements CategoryDao {
     }
 
     @Override
+    @Transactional
+    public boolean add(Category category) {
+
+        try {
+            sessionFactory.openSession().persist(category);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
+
+    @Override
     public List<Category> list() {
 
         return list;
+    }
+
+    @Override
+    public Category get(int id) {
+        for(Category category : list){
+            if(category.getId() == id) return category;
+        }
+        return null;
     }
 }

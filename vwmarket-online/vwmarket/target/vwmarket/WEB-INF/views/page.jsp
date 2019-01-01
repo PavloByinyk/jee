@@ -59,14 +59,14 @@
                     <%@include file="about.jsp" %>
                 </c:if>
 
-                <%--&lt;%&ndash;Load content contact page&ndash;%&gt;--%>
-                <%--<c:if test="${userClickContact == true}">--%>
-                    <%--<%@include file="contact.jsp" %>--%>
-                <%--</c:if>--%>
-
-                <%--Load content products list page--%>
+                <%--Load content contact page--%>
                 <c:if test="${userClickContact == true}">
                     <%@include file="contact.jsp" %>
+                </c:if>
+
+                <%--Load content products list page--%>
+                <c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+                    <%@include file="listProducts.jsp" %>
                 </c:if>
 
             </div>

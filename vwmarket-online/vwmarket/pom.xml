@@ -18,10 +18,17 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <!--<javaee.cersion>7.0</javaee.cersion>-->
-        <spring.version>4.1.5.RELEASE</spring.version>
+        <spring.version>4.3.6.RELEASE</spring.version>
+        <javaee.version>7.0</javaee.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>vwmarketbackend</groupId>
+            <artifactId>vwmarketbackend</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -30,14 +37,19 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/javax/javaee-api &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>javax</groupId>-->
-        <!--<artifactId>javaee-api</artifactId>-->
-        <!--&lt;!&ndash;<version>${javaee.cersion}</version>&ndash;&gt;-->
-        <!--<scope>provided</scope>-->
-        <!--</dependency>-->
+        <!-- SPRING -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>

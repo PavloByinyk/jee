@@ -7,7 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e5f05a-e94b-48b5-abca-3ad7df7dfa30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITVDN/.idea/dataSources/6518d524-5b57-4ff5-9be1-e4d1ae4dcd1c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/java/com/vwmarket/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/java/com/vwmarket/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/java/com/vwmarket/controller/as.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/shared/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/WEB-INF/views/shared/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/assets/js/myapp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/assets/js/myappp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/src/main/webapp/assets/js/myappp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/classes/com/vwmarket/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/classes/com/vwmarket/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/classes/com/vwmarket/controller/as.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/classes/com/vwmarket/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/classes/com/vwmarket/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/classes/com/vwmarket/controller/as.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/shared/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/WEB-INF/views/shared/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/assets/js/myapp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/assets/js/myappp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarket/target/vwmarket/assets/js/myappp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/dao/CategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/daoimpl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/daoimpl/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/dto/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/classes/vwmarketbackend/dto/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/surefire-reports/TEST-vwmarketbackend.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/surefire-reports/TEST-vwmarketbackend.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/surefire-reports/vwmarketbackend.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarket-online/vwmarketbackend/target/surefire-reports/vwmarketbackend.AppTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,29 +69,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="53" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,19 +109,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/RegistrationService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="32" />
+              <folding>
+                <element signature="e#945#956#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,6 +280,57 @@
               <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -222,15 +340,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springtestapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tags" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springtestapp" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +351,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,11 +566,13 @@
       <workItem from="1545905771759" duration="1372000" />
       <workItem from="1546008485356" duration="1559000" />
       <workItem from="1546086472702" duration="43000" />
+      <workItem from="1546190754016" duration="73000" />
+      <workItem from="1546202800215" duration="1497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46542000" />
+    <option name="totallyTimeSpent" value="48112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +587,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -645,16 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.5.Final/hibernate-core-4.2.5.Final.jar!/org/hibernate/Session.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -663,8 +763,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-grid.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -703,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/service/IdeasServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -743,16 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10557">
@@ -774,23 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -800,22 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="833">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -826,10 +878,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/Idea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/dao/IdeasDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/controller/MyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -844,6 +933,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="95" selection-start-line="95" selection-end-line="99" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/levelp/spring/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="e#945#956#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
