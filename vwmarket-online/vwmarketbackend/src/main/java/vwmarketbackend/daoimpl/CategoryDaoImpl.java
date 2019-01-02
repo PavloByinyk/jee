@@ -1,5 +1,7 @@
 package vwmarketbackend.daoimpl;
 
+import org.hibernate.Query;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -7,34 +9,27 @@ import org.springframework.transaction.annotation.Transactional;
 import vwmarketbackend.dao.CategoryDao;
 import vwmarketbackend.dto.Category;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Repository("categoryDaoImpl")
+@Transactional
 public class CategoryDaoImpl implements CategoryDao {
 
     @Autowired
     public SessionFactory sessionFactory;
 
-    public  static List<Category> list = new ArrayList<>();
-
-    static {
-        for (int i = 0; i < 5; i++){
-            Category category = new Category();
-            category.setId(i);
-            category.setActive(true);
-            category.setName("Category " + i);
-            category.setDescription("Description " + i);
-            list.add(category);
-        }
-    }
 
     @Override
     @Transactional
     public boolean add(Category category) {
-
         try {
-            sessionFactory.openSession().persist(category);
+            Session session = sessionFactory.openSession();
+            Serializable id = session.save(category);
+            session.flush();
+            session.close();
+//            sessionFactory.openSession().persist(category);
             return true;
         }catch (Exception e){
             return false;
@@ -42,16 +37,35 @@ public class CategoryDaoImpl implements CategoryDao {
     }
 
     @Override
-    public List<Category> list() {
+    public boolean update(Category category) {
+        try {
+            Session session = sessionFactory.openSession();
+            session.update(category);
+            session.flush();
+            session.close();
+//            sessionFactory.openSession().persist(category);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
 
-        return list;
+    @Override
+    public boolean delete(Category category) {
+        category.setActive(false);
+        return this.update(category);
+    }
+
+    @Override
+    public List<Category> list() {
+        String selectAciveCategories = "FROM Category WHERE active = :active";
+        Query query = sessionFactory.getCurrentSession().createQuery(selectAciveCategories);
+        query.setParameter("active", true);
+        return query.list();
     }
 
     @Override
     public Category get(int id) {
-        for(Category category : list){
-            if(category.getId() == id) return category;
-        }
-        return null;
+        return sessionFactory.getCurrentSession().get(Category.class, Integer.valueOf(id));
     }
 }
