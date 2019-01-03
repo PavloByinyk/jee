@@ -37,8 +37,12 @@
     <!-- Custom styles for this template -->
     <link href="${css}/myapp.css" rel="stylesheet">
     <%--<link href="<c:url value="/assets/css/myapp.css"/>" rel="stylesheet">--%>
+    <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
-    <script> window.menu = '${title}'</script>
+    <script>
+        window.menu = '${title}';
+        window.contextRoot = '${contextRoot}'
+    </script>
 
 </head>
 
@@ -69,6 +73,11 @@
                     <%@include file="listProducts.jsp" %>
                 </c:if>
 
+                <%--Load content product single--%>
+                <c:if test="${userClickSingleProducts == true}">
+                    <%@include file="singleProduct.jsp" %>
+                </c:if>
+
             </div>
         <!-- Footer -->
         <%@include file="./shared/footer.jsp" %>
@@ -77,6 +86,7 @@
         <script src="${js}/jquery.js"></script>
         <script src="${js}/bootstrap.bundle.min.js"></script>
         <script src="${js}/jquery.dataTables.js"></script>
+        <script src="${js}/dataTables.bootstrap.js"></script>
         <script src="${js}/myappp.js"></script>
     </div>
 </body>

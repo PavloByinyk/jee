@@ -27,6 +27,11 @@ footer{
     padding-bottom: 60px; /*height of footer*/
 }
 
+.dataTableImg{
+    width: 100px;
+    height: 100px;
+}
+
 /*.footer{*/
     /*position: absolute;*/
     /*bottom: 0;*/

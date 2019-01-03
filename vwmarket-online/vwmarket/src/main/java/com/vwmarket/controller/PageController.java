@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import vwmarketbackend.dao.CategoryDao;
+import vwmarketbackend.dao.ProductDAO;
 import vwmarketbackend.dto.Category;
+import vwmarketbackend.dto.Product;
 
 @Controller
 public class PageController {
@@ -15,6 +17,10 @@ public class PageController {
 
     @Autowired
     public CategoryDao categoryDao;
+
+    @Autowired
+
+    public ProductDAO productDao;
 
 
     @RequestMapping(value = {"/", "/index", "/home"})
@@ -61,6 +67,22 @@ public class PageController {
         modelAndView.addObject("list", categoryDao.list());
         modelAndView.addObject("category", category);
         modelAndView.addObject("userClickCategoryProducts", true);
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/show/{id}/product")
+    public ModelAndView showSingleProducts(@PathVariable("id") int id){
+        ModelAndView modelAndView = new ModelAndView("page");
+
+        Product product = productDao.get(id);
+
+        product.setViews(product.getViews() +1);
+        productDao.update(product);
+
+        modelAndView.addObject("title", product.getName());
+        modelAndView.addObject("product", product);
+        modelAndView.addObject("userClickSingleProducts", true);
+
         return modelAndView;
     }
 }

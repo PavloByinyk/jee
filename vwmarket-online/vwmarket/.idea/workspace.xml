@@ -7,87 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d224841e-e75c-4379-bab7-9c2e0b317961" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../springtestapp/.idea/dataSources/230ffeb4-9774-493a-b6fd-2756de6bd356.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springtestapp/.idea/dataSources/230ffeb4-9774-493a-b6fd-2756de6bd356.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springtestapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springtestapp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/vwmarket/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vwmarket/controller/PageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/classes/META-INF/vwmarket.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/classes/com/vwmarket/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/WEB-INF/classes/com/vwmarket/controller/PageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/byte-buddy-1.8.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/byte-buddy-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/h2-1.4.197.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-core-4.3.7.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-core-5.3.7.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/hibernate-core-5.4.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/javassist-3.23.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-aop-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-beans-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-context-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-core-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-expression-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-jdbc-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-jdbc-5.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-orm-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-orm-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-orm-5.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-tx-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-tx-5.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-web-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-webmvc-4.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/h2-1.4.196.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/vwmarketbackend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/WEB-INF/lib/vwmarketbackend-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/databaseQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/databaseQueries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/src/test/java/vwmarketbackend/test/CategoryTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/src/test/java/vwmarketbackend/test/CategoryTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/dao/CategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/daoimpl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/daoimpl/CategoryDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/dto/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vwmarketbackend/target/classes/vwmarketbackend/dto/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/views/listProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/WEB-INF/views/listProducts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vwmarket/WEB-INF/views/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/WEB-INF/views/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vwmarket/assets/css/myapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/assets/css/myapp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vwmarket/assets/js/myappp.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/vwmarket/assets/js/myappp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -133,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
+            <state relative-caret-position="538">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1325#1326#0" expanded="true" />
@@ -144,11 +75,45 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/singleProduct.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="97" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
+                <element signature="e#1640#1641#0" expanded="true" />
+                <element signature="e#1741#1742#0" expanded="true" />
+                <element signature="e#1768#1769#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+              <caret line="76" column="53" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -156,72 +121,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="833">
+              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="443">
+              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="489">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <entry file="das://eabddc1d-024b-427c-9ec1-0989c775d224/schema/itvdn/table/product">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/ProductDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-              <folding>
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/jquery.dataTables.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/JsonDataController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-              </folding>
+        <entry file="das://eabddc1d-024b-427c-9ec1-0989c775d224/schema/itvdn/table/category">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -232,9 +169,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -261,14 +198,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jquery.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myapp.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shared/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-readable-theme.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shared/sidebar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shared/navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java" />
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/config/HibernateConfig.java" />
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/test/java/vwmarketbackend/test/CategoryTestCase.java" />
@@ -282,9 +217,12 @@
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Product.java" />
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/singleProduct.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java" />
       </list>
     </option>
   </component>
@@ -391,6 +329,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -413,6 +360,41 @@
             <path>
               <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
               <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vwmarketbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vwmarket" type="b2602c69:ProjectViewProjectNode" />
@@ -449,6 +431,7 @@
       <recent name="vwmarketbackend.daoimpl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\escape\ee\jee\vwmarket-online\vwmarket\src\main\webapp\assets\images" />
       <recent name="D:\escape\ee\jee\vwmarket-online\vwmarket\src\main\webapp\assets\js" />
       <recent name="D:\escape\ee\jee\vwmarket-online\vwmarket\src\main\webapp\assets\css" />
       <recent name="D:\escape\ee\jee\vwmarket-online\vwmarket\src\main\webapp\assest" />
@@ -794,7 +777,7 @@
       <workItem from="1546101575145" duration="2762000" />
       <workItem from="1546179523575" duration="22655000" />
       <workItem from="1546414914404" duration="2411000" />
-      <workItem from="1546419434858" duration="17793000" />
+      <workItem from="1546419434858" duration="29741000" />
     </task>
     <servers />
   </component>
@@ -831,7 +814,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74960000" />
+    <option name="totallyTimeSpent" value="86908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,7 +829,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23240939" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -857,7 +840,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37444445" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.15888889" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -870,16 +853,16 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.31777778" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.10394456" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.10181237" />
+      <window_info anchor="right" id="Database" order="3" weight="0.018123668" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.24093817" />
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Bean Validation" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="CDI" order="8" visible="true" weight="0.10927505" />
+      <window_info anchor="right" id="CDI" order="8" weight="0.10927505" />
       <window_info anchor="right" id="Palette" order="9" />
     </layout>
   </component>
@@ -903,21 +886,23 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js</url>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java</url>
-          <line>55</line>
-          <properties class="com.vwmarket.controller.PageController" method="showCategoryProducts">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js</url>
+          <line>33</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java</url>
-          <line>45</line>
-          <properties class="com.vwmarket.controller.PageController" method="showAllProducts">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js</url>
+          <line>37</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java</url>
@@ -985,18 +970,6 @@
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1050,47 +1023,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-readable-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3145">
-          <caret line="11" column="174862" selection-start-line="11" selection-start-column="174862" selection-end-line="11" selection-end-column="174862" />
-          <folding>
-            <element signature="e#30904#31138#2" expanded="true" />
-            <element signature="e#31816#31969#1" expanded="true" />
-            <element signature="e#32010#32244#1" expanded="true" />
-            <element signature="e#35601#35877#2" expanded="true" />
-            <element signature="e#36581#36734#1" expanded="true" />
-            <element signature="e#36775#37051#1" expanded="true" />
-            <element signature="e#70375#70562#2" expanded="true" />
-            <element signature="e#70795#70931#2" expanded="true" />
-            <element signature="e#71342#71475#2" expanded="true" />
-            <element signature="e#73222#73375#1" expanded="true" />
-            <element signature="e#88517#88747#2" expanded="true" />
-            <element signature="e#89582#89818#2" expanded="true" />
-            <element signature="e#118736#118913#2" expanded="true" />
-            <element signature="e#118959#119136#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shared/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1140,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -1216,24 +1141,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dao/CategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://eabddc1d-024b-427c-9ec1-0989c775d224/schema/itvdn/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1309,64 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1946#1947#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2234#2235#0" expanded="true" />
-            <element signature="e#2265#2266#0" expanded="true" />
-            <element signature="e#2309#2310#0" expanded="true" />
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2556#2557#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2648#2649#0" expanded="true" />
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2806#2807#0" expanded="true" />
-            <element signature="e#2839#2840#0" expanded="true" />
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-            <element signature="e#2989#2990#0" expanded="true" />
-            <element signature="e#3017#3018#0" expanded="true" />
-            <element signature="e#3056#3057#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1388,30 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/JsonDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1422,7 +1251,7 @@
     <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/ProductDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
-          <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="e#551#552#0" expanded="true" />
             <element signature="e#643#644#0" expanded="true" />
@@ -1452,27 +1281,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/faces/view/ViewScoped.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/dataTables.bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/dataTables.bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/JsonDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="44" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/daoimpl/CategoryDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eabddc1d-024b-427c-9ec1-0989c775d224/schema/itvdn/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/myapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eabddc1d-024b-427c-9ec1-0989c775d224/schema/itvdn/table/product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/myappp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="443">
+          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../vwmarketbackend/src/main/java/vwmarketbackend/dto/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/singleProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="97" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="76" column="53" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vwmarket/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
         </state>
       </provider>
     </entry>
