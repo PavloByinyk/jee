@@ -1,8 +1,11 @@
 package vwmarketbackend.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -16,18 +19,18 @@ public class Product implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String code;
-//    @NotBlank(message = "Please enter the product name!")
+    @NotBlank(message = "Please enter the product name!")
     private String name;
-//    @NotBlank(message = "Please enter the brand name!")
+    @NotBlank(message = "Please enter the brand name!")
     private String brand;
-//    @NotBlank(message = "Please enter the description!")
+    @NotBlank(message = "Please enter the description!")
     private String description;
     @Column(name = "unit_price")
-//    @Min(value = 1, message="Please select at least one value!")
+    @Min(value = 1, message="Please select at least one value!")
     private double unitPrice;
     private int quantity;
     @Column(name = "is_active")
-    private boolean active;
+    private boolean active = true;
     @Column(name = "category_id")
     @JsonIgnore
     private int categoryId;
@@ -38,16 +41,16 @@ public class Product implements Serializable {
     private int views;
 
 
-//    @Transient
-//    private MultipartFile file;
-//
-//    public MultipartFile getFile() {
-//        return file;
-//    }
-//
-//    public void setFile(MultipartFile file) {
-//        this.file = file;
-//    }
+    @Transient
+    private MultipartFile file;
+
+    public MultipartFile getFile() {
+        return file;
+    }
+
+    public void setFile(MultipartFile file) {
+        this.file = file;
+    }
 
 
     // default constructor

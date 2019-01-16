@@ -92,6 +92,8 @@
         <script src="${js}/jquery.dataTables.js"></script>
         <script src="${js}/dataTables.bootstrap.js"></script>
         <script src="${js}/myappp.js"></script>
+        <script src="${js}/bootbox.min.js"></script>
+        <script src="${js}/jquery.validate.js"></script>
     </div>
 </body>
 
