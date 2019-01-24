@@ -13,6 +13,9 @@ $(function () {
         case 'Manage Products':
             $('#manageProducts').addClass('active');
             break;
+        case 'Shopping Cart':
+            $('#userCart').addClass('active');
+            break;
         case 'All products':
             // $('#listProducts').addClass('active');
             // break;
@@ -21,6 +24,18 @@ $(function () {
             $('#a_' + menu).addClass('active');
             break;
     }
+
+    // for handling CSRF token
+    var token = $('meta[name="_csrf"]').attr('content');
+    var header = $('meta[name="_csrf_header"]').attr('content');
+
+    if((token!=undefined && header !=undefined) && (token.length > 0 && header.length > 0)) {
+        // set the token header for the ajax request
+        $(document).ajaxSend(function(e, xhr, options) {
+            xhr.setRequestHeader(header,token);
+        });
+    }
+
 
     var $table = $('#productListTable');
 
@@ -88,14 +103,19 @@ $(function () {
                             str += '<a href="javascript:void(0)" class="btn btn-success disabled"><span class="glyphicon glyphicon-shopping-cart"><strike>Add to Cart</strike></span></a>';
                         } else {
 
+                            if(userRole == 'ADMIN'){
+                                str += '<a href="'
+                                    + window.contextRoot
+                                    + '/manage/'
+                                    + data
+                                    + '/product" class="btn btn-warning"><span class="glyphicon glyphicon-shopping-cart">Add to Cart</span></a>';
+                            }
                             str += '<a href="'
                                 + window.contextRoot
                                 + '/cart/add/'
                                 + data
                                 + '/product" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart">Add to Cart</span></a>';
                         }
-
-
 
                         return str;
                     }
@@ -326,6 +346,69 @@ $(function () {
 
     }
 
+
+    $loginForm = $('#loginForm');
+
+    if($loginForm.length) {
+
+        $loginForm.validate({
+                rules: {
+                    username: {
+                        required: true,
+                        email: true
+
+                    },
+                    password: {
+                        required: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: 'Please enter your email!',
+                        email: 'Please enter a valid email address!'
+                    },
+                    password: {
+                        required: 'Please enter your password!'
+                    }
+                },
+                errorElement : "em",
+                errorPlacement : function(error, element) {
+                    // Add the 'help-block' class to the error element
+                    error.addClass("help-block");
+
+                    // add the error label after the input element
+                    error.insertAfter(element);
+                }
+            }
+
+        );
+
+    }
+
+
+    $('button[name="refreshCart"]').click(function(){
+        var cartLineId = $(this).attr('value');
+        var countField = $('#count_' + cartLineId);
+        var originalCount = countField.attr('value');
+        // do the checking only the count has changed
+        if(countField.val() !== originalCount) {
+            // check if the quantity is within the specified range
+            if(countField.val() < 1 || countField.val() > 3) {
+                // set the field back to the original field
+                countField.val(originalCount);
+                bootbox.alert({
+                    size: 'medium',
+                    title: 'Error',
+                    message: 'Product Count should be minimum 1 and maximum 3!'
+                });
+            }
+            else {
+                // use the window.location.href property to send the request to the server
+                var updateUrl = window.contextRoot + '/cart/' + cartLineId + '/update?count=' + countField.val();
+                window.location.href = updateUrl;
+            }
+        }
+    });
 
 
 });

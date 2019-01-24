@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CategoryDao {
 
-    List<Category> list();
+    List list();
     Category get(int id);
     boolean add(Category category);
     boolean update(Category category);

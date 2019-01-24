@@ -58,6 +58,7 @@
 
             <%--<h6>Qty. Available ${product.quantity}</h6>--%>
 
+            <security:authorize access="hasAuthority('USER')">
             <c:choose>
 
                 <c:when test="${product.quantity < 1}">
@@ -73,9 +74,17 @@
                 </c:otherwise>
 
             </c:choose>
+            </security:authorize>
 
             <%--<a href="${contextRoot}/cart/add/${product.id}/product" class="btn btn-success">Add to Cart</a>--%>
             <a href="${contextRoot}/show/all/${product.id}/products" class="btn btn-success">Back</a>
+
+
+            <security:authorize access="hasAuthority('ADMIN')">
+
+                <a href="${contextRoot}/cart/add/${product.id}/product" class="btn btn-warning">Edit</a>
+
+            </security:authorize>
 
         </div>
 

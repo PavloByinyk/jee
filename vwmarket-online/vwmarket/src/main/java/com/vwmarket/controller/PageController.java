@@ -2,14 +2,21 @@ package com.vwmarket.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import vwmarketbackend.dao.CategoryDao;
 import vwmarketbackend.dao.ProductDAO;
 import vwmarketbackend.dto.Category;
 import vwmarketbackend.dto.Product;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class PageController {
@@ -84,5 +91,49 @@ public class PageController {
         modelAndView.addObject("userClickSingleProducts", true);
 
         return modelAndView;
+    }
+
+    @RequestMapping(value = "/register")
+    public ModelAndView register(@PathVariable("id") int id){
+        ModelAndView modelAndView = new ModelAndView("page");
+        modelAndView.addObject("title", "Register");
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/login")
+    public ModelAndView login(@RequestParam(name = "error", required = false) String error,
+                              @RequestParam(name = "logout", required = false) String logout){
+        ModelAndView modelAndView = new ModelAndView("login");
+        modelAndView.addObject("title", "Login");
+
+        if(error != null){
+            modelAndView.addObject("message", "Invalidate login or password");
+        }
+
+        if(logout != null){
+            modelAndView.addObject("logout", "User has successfully logged out");
+        }
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/access-denied")
+    public ModelAndView accessDenied(){
+        ModelAndView modelAndView = new ModelAndView("error");
+        modelAndView.addObject("title", "Error");
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/perform-logout")
+    public String logout(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse){
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if(auth != null){
+            new SecurityContextLogoutHandler().logout(httpServletRequest, httpServletResponse, auth);
+        }
+
+        return "redirect:/login?logout";
     }
 }

@@ -25,6 +25,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}">
+
     <title>vmmarket - ${title}</title>
 
     <!-- Bootstrap core CSS -->
@@ -77,10 +80,16 @@
                 <c:if test="${userClickSingleProducts == true}">
                     <%@include file="singleProduct.jsp" %>
                 </c:if>
+
+                 <c:if test="${userClickShowCart == true}">
+                     <%@include file="cart.jsp" %>
+                 </c:if>
+
                     <%--Load content product single--%>
                     <c:if test="${userClickManageProducts == true}">
                         <%@include file="manageProducts.jsp" %>
                     </c:if>
+
 
             </div>
         <!-- Footer -->
