@@ -103,4 +103,15 @@ public class User implements UserDetails {
         return getRoles();
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", active=" + active +
+                ", password='" + password + '\'' +
+                ", roles=" + roles +
+                ", messages=" + messages +
+                '}';
+    }
 }
