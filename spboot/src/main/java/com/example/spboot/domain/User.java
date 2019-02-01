@@ -36,6 +36,8 @@ public class User implements UserDetails {
     }
 
     public String getUsername() {
+        System.out.println("getUsername -----  >>> " + username);
+
         return username;
     }
 
@@ -96,6 +98,11 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return isActive();
+    }
+
+    public boolean isAdmin(){
+        System.out.println("isAdmin -----  >>> " + roles.contains(Role.ADMIN));
+        return roles.contains(Role.ADMIN);
     }
 
     @Override

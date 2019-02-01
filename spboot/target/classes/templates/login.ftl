@@ -16,8 +16,8 @@ Login page
     <#--<input type="hidden" name="_csrf" value="{{_csrf.token}}"/>-->
     <#--<div><input type="submit" value="Sign In"/></div>-->
 <#--</form>-->
-<@l.login "/login"/>
-<a href="/registration">Add new user</a>
+<@l.login "/login" false/>
+<#--<a href="/registration">Add new user</a>-->
 <#--</body>-->
 <#--</html>-->
 </@c.page>

@@ -21,5 +21,5 @@
 <@c.page>
     Registration page
     ${message?if_exists}
-    <@l.login "/registration"/>
+    <@l.login "/registration" true/>
 </@c.page>
