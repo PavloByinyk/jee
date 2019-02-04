@@ -4,6 +4,11 @@
 <@c.page>
 Login page
     ${message?if_exists}
+    <#if Session?? && Session.SPRING_SECURITY_LAST_EXCEPTION??>
+        <div class="alert alert-danger" role="alert">
+            ${Session.SPRING_SECURITY_LAST_EXCEPTION.message}
+        </div>
+    </#if>
 <#--<!DOCTYPE html>-->
 <#--<html xmlns="http://www.w3.org/1999/xhtml"-->
       <#--xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">-->

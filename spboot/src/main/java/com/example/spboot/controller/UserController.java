@@ -3,36 +3,38 @@ package com.example.spboot.controller;
 
 import com.example.spboot.domain.Role;
 import com.example.spboot.domain.User;
-import com.example.spboot.repository.UserRepository;
+import com.example.spboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
-@PreAuthorize("hasAuthority('ADMIN')")
 public class UserController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
     @GetMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String userList(Model model){
         System.out.println("userList");
-        ArrayList<User> list = (ArrayList<User>) userRepository.findAll();
+        ArrayList<User> list = (ArrayList<User>) userService.findAll();
 
         list.stream().forEach(System.out::println);
 
-        model.addAttribute("users", userRepository.findAll());
+        model.addAttribute("users", userService.findAll());
         return "userList";
     }
 
     @GetMapping("{user}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String userEditForm(@PathVariable User user, Model model){
         System.out.println("userEditForm");
 
@@ -42,28 +44,34 @@ public class UserController {
     }
 
     @PostMapping()
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String userSave(
             @RequestParam String userName,
             @RequestParam Map<String, String> form,
-            @RequestParam("userId") User user, Model model){
+            @RequestParam("userId") User user){
 
-        user.setUsername(userName);
-
-        Set<String> roles = Arrays.stream(Role.values())
-                .map(Role::name)
-                .collect(Collectors.toSet());
-
-        user.getRoles().clear();
-
-        for(String key : form.keySet()){
-            if(roles.contains(key)){
-                user.getRoles().add(Role.valueOf(key));
-            }
-        }
-
-        userRepository.save(user);
+        userService.saveUser(user, userName, form);
 
         return "redirect:/user";
     }
+
+    @GetMapping("/profile")
+    public String getProfile(Model model, @AuthenticationPrincipal User user){
+        model.addAttribute("username", user.getUsername());
+        model.addAttribute("email", user.getEmail());
+
+        return "profile";
+    }
+
+    @PostMapping("/profile")
+    public String updateProfile(
+            @AuthenticationPrincipal User user,
+            @RequestParam String password,
+            @RequestParam String email
+    ){
+        userService.updateProfile(user, password, email);
+        return "redirect:/user/profile";
+    }
+
 }
 

@@ -4,6 +4,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -13,11 +15,18 @@ import java.util.Set;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank(message = "Please fill the name")
     private String username;
-    private boolean active;
+
+    @NotBlank(message = "Please fill the password")
     private String password;
+    @Transient
+    @NotBlank(message = "Please fill the password confirmation")
+    private String password2;
+    private boolean active;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
@@ -27,6 +36,9 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "id")
     private List<Message> messages;
 
+
+    @Email(message = "Email is not correct")
+    @NotBlank(message = "Please fill the email")
     private String email;
     private String activationCode;
 
@@ -117,6 +129,14 @@ public class User implements UserDetails {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    public String getPassword2() {
+        return password2;
+    }
+
+    public void setPassword2(String password2) {
+        this.password2 = password2;
     }
 
     public boolean isAdmin(){
