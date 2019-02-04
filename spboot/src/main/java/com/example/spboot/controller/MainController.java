@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collector;
@@ -96,6 +98,31 @@ public class MainController {
         Iterable<Message> messages = messageRepository.findAll();
         map.addAttribute("messages", messages);
         return "main";
+    }
+
+    @GetMapping("user-messages/{user}")
+    public String userMessages(@AuthenticationPrincipal User userFromSession, @PathVariable User user, Model model, @RequestParam(required = false) Message message){
+        List<Message> messages = user.getMessages();
+        model.addAttribute("messages", messages);
+        model.addAttribute("message", message);
+        model.addAttribute("isCurrentUser", userFromSession.equals(user));
+
+        return "userMessages";
+    }
+
+    @PostMapping("user-messages/{user}")
+    public String updateMessage(
+            @AuthenticationPrincipal User userFromSession,
+            @PathVariable User user,
+            @RequestParam("id") Message message,
+            @RequestParam String text,
+            @RequestParam String tag){
+
+        message.setText(text);
+        message.setTag(tag);
+
+        messageRepository.save(message);
+        return "redirect:/user-messages/" + user.getId();
     }
 
 

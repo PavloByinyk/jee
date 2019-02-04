@@ -22,6 +22,11 @@
             </#if>
             <#if user??>
                 <li class="nav-item">
+                    <a class="nav-link" href="user-messages/{currentUserId}">My mesaages</a>
+                </li>
+            </#if>
+            <#if user??>
+                <li class="nav-item">
                     <a class="nav-link" href="/user/profile">Profile</a>
                 </li>
             </#if>

@@ -8,6 +8,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -23,9 +24,9 @@ public class User implements UserDetails {
 
     @NotBlank(message = "Please fill the password")
     private String password;
-    @Transient
-    @NotBlank(message = "Please fill the password confirmation")
-    private String password2;
+//    @Transient
+//    @NotBlank(message = "Please fill the password confirmation")
+//    private String password2;
     private boolean active;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -33,7 +34,7 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany(mappedBy = "id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Message> messages;
 
 
@@ -131,13 +132,13 @@ public class User implements UserDetails {
         this.activationCode = activationCode;
     }
 
-    public String getPassword2() {
-        return password2;
-    }
-
-    public void setPassword2(String password2) {
-        this.password2 = password2;
-    }
+//    public String getPassword2() {
+//        return password2;
+//    }
+//
+//    public void setPassword2(String password2) {
+//        this.password2 = password2;
+//    }
 
     public boolean isAdmin(){
         System.out.println("isAdmin -----  >>> " + roles.contains(Role.ADMIN));
@@ -147,6 +148,20 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return getRoles();
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id.equals(user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override
