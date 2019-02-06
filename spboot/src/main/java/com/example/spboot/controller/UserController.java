@@ -27,7 +27,7 @@ public class UserController {
         System.out.println("userList");
         ArrayList<User> list = (ArrayList<User>) userService.findAll();
 
-        list.stream().forEach(System.out::println);
+        list.forEach(System.out::println);
 
         model.addAttribute("users", userService.findAll());
         return "userList";
@@ -71,6 +71,42 @@ public class UserController {
     ){
         userService.updateProfile(user, password, email);
         return "redirect:/user/profile";
+    }
+
+    @GetMapping("/subscribe")
+    public String subscribe(
+            @AuthenticationPrincipal User currentUser,
+            @PathVariable User user){
+
+        userService.subscribe(currentUser, user);
+        return "redirect:/user-messages/" + user.getId();
+    }
+
+    @GetMapping("/unsubscribe")
+    public String unsubscribe(
+            @AuthenticationPrincipal User currentUser,
+            @PathVariable User user){
+
+        userService.unsubscribe(currentUser, user);
+        return "redirect:/user-messages/" + user.getId();
+    }
+
+    @GetMapping("/{type}/{user}/list")
+    public String userList(
+            Model model,
+            @AuthenticationPrincipal User currentUser,
+            @PathVariable User user,
+            @PathVariable String type){
+
+        model.addAttribute("userChanel", user);
+        model.addAttribute("type", type);
+
+        if("subscriptions".equals(type)) {
+            model.addAttribute("users", user.getSubscriptions());
+        }else {
+            model.addAttribute("users", user.getSubscribers());
+        }
+        return "subscriptions";
     }
 
 }

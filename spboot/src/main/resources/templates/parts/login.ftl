@@ -78,7 +78,7 @@
     <div>
     <form action="${path}" method="post">
 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-    <button class="btn btn-primary mb-2" type="submit">Sign out</button>
+    <button class="btn btn-primary mb-2" type="submit"><#if user??>Sign out<#else>Log in</#if></button>
     </form>
     </div>
 </#macro>

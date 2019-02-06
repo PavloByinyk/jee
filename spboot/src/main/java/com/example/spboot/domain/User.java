@@ -6,10 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "usr")
@@ -42,6 +39,23 @@ public class User implements UserDetails {
     @NotBlank(message = "Please fill the email")
     private String email;
     private String activationCode;
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_subscription",
+            joinColumns = { @JoinColumn(name = "chanel_id")},
+            inverseJoinColumns = {@JoinColumn(name = "subscriber_id") }
+            )
+    private Set<User> subscribers = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_subscription",
+            joinColumns = { @JoinColumn(name = "subscriber_id")},
+            inverseJoinColumns = {@JoinColumn(name = "chanel_id") }
+    )
+    private Set<User> subscriptions = new HashSet<>();
+
 
     public Long getId() {
         return id;
@@ -140,9 +154,27 @@ public class User implements UserDetails {
 //        this.password2 = password2;
 //    }
 
+    public Set<User> getSubscribers() {
+        return subscribers;
+    }
+
+    public void setSubscribers(Set<User> subscribers) {
+        this.subscribers = subscribers;
+    }
+
+    public Set<User> getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(Set<User> subscriptions) {
+        this.subscriptions = subscriptions;
+    }
+
     public boolean isAdmin(){
         System.out.println("isAdmin -----  >>> " + roles.contains(Role.ADMIN));
         return roles.contains(Role.ADMIN);
+
+
     }
 
     @Override

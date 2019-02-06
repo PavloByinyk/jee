@@ -15,7 +15,7 @@
                 <div class="form-group row">
                     <label for="staticPass" class="col-sm-2 col-form-label"> Email: </label>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" placeholder="some@some.com" name="email" value="${email}">
+                        <input type="email" class="form-control" placeholder="some@some.com" name="email" <#if email??>value="${email}</#if>">
                     </div>
                 </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>

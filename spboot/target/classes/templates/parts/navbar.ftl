@@ -22,7 +22,7 @@
             </#if>
             <#if user??>
                 <li class="nav-item">
-                    <a class="nav-link" href="user-messages/{currentUserId}">My mesaages</a>
+                    <a class="nav-link" href="user-messages/${currentUserId}">My mesaages ${currentUserId}</a>
                 </li>
             </#if>
             <#if user??>

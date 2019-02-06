@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,9 +47,9 @@ public class MainController {
     public String main(@RequestParam(required = false, defaultValue = "") String filter, Model model) {
         Iterable<Message> messages = messageRepository.findAll();
 
-        if(filter != null && !filter.isEmpty()){
+        if (filter != null && !filter.isEmpty()) {
             messages = messageRepository.findByTagLike(filter);
-        }else {
+        } else {
             messages = messageRepository.findAll();
         }
 
@@ -71,10 +72,10 @@ public class MainController {
         message.setUser(user);
         System.out.println("File is empty -->" + file == null);
 
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             map.mergeAttributes(ControllerUtils.getErrors(bindingResult));
             map.addAttribute("message", message);
-        }else {
+        } else {
 
             if (file != null) {
                 File uploadDir = new File(uploadPath);
@@ -101,11 +102,18 @@ public class MainController {
     }
 
     @GetMapping("user-messages/{user}")
-    public String userMessages(@AuthenticationPrincipal User userFromSession, @PathVariable User user, Model model, @RequestParam(required = false) Message message){
+    public String userMessages(
+            @AuthenticationPrincipal User userFromSession,
+            @PathVariable User user, Model model,
+            @RequestParam(required = false) Message message) {
         List<Message> messages = user.getMessages();
+        model.addAttribute("userChanel", user);
         model.addAttribute("messages", messages);
         model.addAttribute("message", message);
         model.addAttribute("isCurrentUser", userFromSession.equals(user));
+        model.addAttribute("subscriptionsCount", user.getSubscriptions().size());
+        model.addAttribute("subscribersCount", user.getSubscribers().size());
+        model.addAttribute("isSubscriber", user.getSubscribers().contains(userFromSession));
 
         return "userMessages";
     }
@@ -116,14 +124,29 @@ public class MainController {
             @PathVariable User user,
             @RequestParam("id") Message message,
             @RequestParam String text,
-            @RequestParam String tag){
+            @RequestParam String tag) {
+//        message.setText(text);
+//        message.setTag(tag);
+//
+//        messageRepository.save(message);
+//        return "redirect:/user-messages/" + user.getId();
+        if (message.getUser().equals(userFromSession)) {
+            if (!StringUtils.isEmpty(text)) {
+                message.setText(text);
+            }
 
-        message.setText(text);
-        message.setTag(tag);
+            if (!StringUtils.isEmpty(tag)) {
+                message.setTag(tag);
+            }
 
-        messageRepository.save(message);
+//            saveFile(message, file);
+
+            messageRepository.save(message);
+        }
         return "redirect:/user-messages/" + user.getId();
+
     }
+
 
 
 
