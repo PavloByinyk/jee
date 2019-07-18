@@ -1,25 +1,24 @@
 package com.example.polls.controller;
 
+import com.example.polls.event.OnUserRegistrationCompleteEvent;
 import com.example.polls.exception.InvalidTokenRequestException;
 import com.example.polls.exception.UserRegistrationException;
-import com.example.polls.model.token.ConfirmationToken;
 import com.example.polls.payload.ApiResponse;
 import com.example.polls.payload.JwtAuthenticationResponse;
 import com.example.polls.payload.LoginRequest;
 import com.example.polls.payload.SignUpRequest;
-import com.example.polls.repository.ConfirmationTokenRepository;
 import com.example.polls.security.JwtTokenProvider;
 import com.example.polls.service.AuthService;
-import com.example.polls.service.EmailSenderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
 import java.net.URI;
@@ -38,23 +37,18 @@ public class AuthController {
     private JwtTokenProvider tokenProvider;
 
     @Autowired
-    private ConfirmationTokenRepository confirmationTokenRepository;
+    private ApplicationEventPublisher applicationEventPublisher;
 
-    @Autowired
-    private EmailSenderService emailSenderService;
 
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
-
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getUsernameOrEmail(),
                         loginRequest.getPassword()
                 )
         );
-
         SecurityContextHolder.getContext().setAuthentication(authentication);
-
         JwtAuthenticationResponse jwt = tokenProvider.generateToken(authentication);
         return ResponseEntity.ok(jwt);
     }
@@ -64,18 +58,9 @@ public class AuthController {
         return authService.registerUser(signUpRequest)
                 .map(user -> {
 
-
-                    ConfirmationToken confirmationToken = new ConfirmationToken(user);
-                    confirmationTokenRepository.save(confirmationToken);
-                    SimpleMailMessage mailMessage = new SimpleMailMessage();
-                    mailMessage.setTo(user.getEmail());
-                    mailMessage.setSubject("Complete Registration!");
-                    mailMessage.setFrom("chand312902@gmail.com");
-                    mailMessage.setText("To confirm your account, please click here : "
-                            + "http://localhost:5000/api/auth/confirm-account?token="+ confirmationToken.getConfirmationToken());
-                    emailSenderService.sendEmail(mailMessage);
-
-
+                    UriComponentsBuilder urlBuilder = ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/auth/confirm-account");
+                    OnUserRegistrationCompleteEvent onUserRegistrationCompleteEvent = new OnUserRegistrationCompleteEvent(user, urlBuilder);
+                    applicationEventPublisher.publishEvent(onUserRegistrationCompleteEvent);
 
                     URI location = ServletUriComponentsBuilder
                             .fromCurrentContextPath().path("/api/users/{username}")

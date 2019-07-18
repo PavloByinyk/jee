@@ -1,6 +1,7 @@
 package com.example.polls.service;
 
 import com.example.polls.exception.InvalidTokenRequestException;
+import com.example.polls.model.User;
 import com.example.polls.model.token.ConfirmationToken;
 import com.example.polls.repository.ConfirmationTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
-import java.util.Date;
 import java.util.Optional;
 
 @Service
@@ -28,6 +28,12 @@ public class ConfirmationTokenService {
     public ConfirmationToken save(ConfirmationToken confirmationToken){
         return tokenRepository.save(confirmationToken);
     }
+
+
+    public ConfirmationToken createNewConfirmationToken(User user){
+        return new ConfirmationToken(user);
+    }
+
 
     /**
      * Verify whether the token provided has expired or not on the basis of the current
