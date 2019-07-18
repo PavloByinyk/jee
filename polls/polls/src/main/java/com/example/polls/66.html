@@ -1,0 +1,221 @@
+﻿<html>
+<head>
+
+    <script type="text/javascript" src="../dblink.js"></script>
+    <script language="JavaScript">
+
+        var Statement = null;
+
+        function CloseStatement() {
+            Statement.Close();
+        }
+
+        function PrepareStatement(Sql) {
+            Statement = Connection.Prepare(Sql);
+        }
+
+        function Show() {
+            var html = "<HTML>";
+            html += "<META http-equiv='Content-Type' content='text/html; charset=UTF-8' />";
+            var outletId = OL_id;
+            html += getTableData(TP_INFO_IDX, outletId);
+            html += getTableData(SALES_CURRENT_OUTLET_IDX, outletId);
+            html += getTableData(SALES_IDX, outletId);
+            html += "</HTML>";
+            document.write(html);
+        }
+
+        function getTableData(idx, outletId) {
+            var html = "";
+            var sql = getQuery(idx, outletId);
+            PrepareStatement(sql);
+            html += getTitle(idx);
+            html += getTable(idx);
+            CloseStatement();
+            return html;
+        }
+
+        function getTitle(idx) {
+            var title = "";
+            switch(idx) {
+                case TP_INFO_IDX:
+                    title = "Информация для ТП";
+                    break;
+                case SALES_CURRENT_OUTLET_IDX:
+                    title = "Информация о продажах по текущей ТТ";
+                    break;
+                case SALES_IDX:
+                    title = "Информация о продажах по всем ТТ";
+                    break;
+                default:
+                    title = "UNKNOWN";
+                    break;
+            }
+            return "<center><h3>" + title + "</h3></center>";
+        }
+
+        function getQuery(idx, outletId) {
+            var query = "";
+            switch(idx) {
+                case TP_INFO_IDX:
+                    query = "SELECT OlName, OlDeliveryAddress FROM tblOutlets WHERE Ol_Id={0}".formatNumber(outletId);
+                    break;
+                case SALES_CURRENT_OUTLET_IDX:
+                    query =  "SELECT (CAST(ROUND(CAST(Sum_ AS DECIMAL(28,20)),2)AS VARCHAR))sum,(IFNULL(NaklQty,0))NaklQty,(IFNULL(AvgLoad,0))AvgLoad,(IFNULL(Assort,0))Assort," +
+                        "(CAST(ROUND(CAST(ItAss AS DECIMAL(28,20)),2)AS VARCHAR))ItAss, Ol_Id, RowMonth FROM (" +
+                        "SELECT sql.*, o.Ol_Id, (0)RowMonth FROM tblOutlets o LEFT JOIN(" +
+                        "SELECT Num1 AS Sum_, Num4 NaklQty, Num2 AS AvgLoad, Num3 AS Assort, Num5 AS ItAss, Char1 AS Month, Bigint1 AS Ol_Id " +
+                        "FROM tblMobileReportsD WHERE Report_Id=16718 AND Month=(SELECT CAST(strftime('%m','now', '-0 month') AS int))) sql " +
+                        "ON o.Ol_Id=sql.Ol_Id WHERE o.Ol_Id={0}".formatNumber(outletId);
+                    query += " UNION ALL SELECT sql.*, o.Ol_Id, (1)RowMonth FROM tblOutlets o LEFT JOIN(" +
+                        "SELECT Num1 AS Sum_, Num4 NaklQty, Num2 AS AvgLoad, Num3 AS Assort, Num5 AS ItAss, Char1 AS Month, Bigint1 AS Ol_Id " +
+                        "FROM tblMobileReportsD WHERE Report_Id=16718 AND Month=(SELECT CAST(strftime('%m','now', '-1 month') AS int))) sql " +
+                        "ON o.Ol_Id=sql.Ol_Id WHERE o.Ol_Id={0}".formatNumber(outletId);
+                    query += " UNION ALL SELECT sql.*, o.Ol_Id, (2)RowMonth FROM tblOutlets o LEFT JOIN(" +
+                        "SELECT Num1 AS Sum_, Num4 NaklQty, Num2 AS AvgLoad, Num3 AS Assort, Num5 AS ItAss, Char1 AS Month, Bigint1 AS Ol_Id " +
+                        "FROM tblMobileReportsD WHERE Report_Id=16718 AND Month=(SELECT CAST(strftime('%m','now', '-2 month') AS int))) sql " +
+                        "ON o.Ol_Id=sql.Ol_Id WHERE o.Ol_Id={0})ORDER BY RowMonth".formatNumber(outletId);
+                    break;
+                case SALES_IDX:
+                    query += "SELECT (CAST(ROUND(CAST(Sum_ AS DECIMAL(28,20)),2)AS VARCHAR))sum, (IFNULL(NaklQty,0))NaklQty, (IFNULL(Sum_/NaklQty,0))AvgLoad, " +
+                        "(IFNULL(ItAss,0))ItAss,(IFNULL(ItAss/NaklQty,0))Assort,RowMonth FROM (";
+                    query += "SELECT SUM(Num1) AS Sum_, SUM(Num4) NaklQty, SUM(Num2) AS AvgLoad, SUM(Num5) AS ItAss, SUM(Num3) AS Assort,(0)RowMonth " +
+                        "FROM tblMobileReportsD, tblOutlets ON Bigint1=Ol_Id WHERE Report_Id=16718 AND Char1=(SELECT CAST(strftime('%m','now','-0 month') AS int)) " +
+                        "UNION ALL SELECT SUM(Num1) AS Sum_, SUM(Num4) NaklQty, SUM(Num2) AS AvgLoad, SUM(Num5) AS ItAss, SUM(Num3) AS Assort,(1)RowMonth " +
+                        "FROM tblMobileReportsD, tblOutlets ON Bigint1=Ol_Id WHERE Report_Id=16718 AND Char1=(SELECT CAST(strftime('%m','now','-1 month') AS int)) " +
+                        "UNION ALL SELECT SUM(Num1) AS Sum_, SUM(Num4) NaklQty, SUM(Num2) AS AvgLoad, SUM(Num5) AS ItAss, SUM(Num3) AS Assort,(2)RowMonth " +
+                        "FROM tblMobileReportsD, tblOutlets ON Bigint1=Ol_Id WHERE Report_Id=16718 AND Char1=(SELECT CAST(strftime('%m','now','-2 month') AS int))";
+                    query += ")";
+                    break;
+                default:
+                    query = "";
+                    break;
+            }
+            return query;
+        }
+
+        function getHeader(idx) {
+            var result = '';
+            var thOpen = "<th align='center'><font size='1'>";
+            var thClose = "</font></th>";
+            switch(idx) {
+                case SALES_CURRENT_OUTLET_IDX:
+                case SALES_IDX:
+                    result = "<tr>";
+                    result += thOpen + "" + thClose;
+                    result += thOpen + "-2" + thClose;
+                    result += thOpen + "-1" + thClose;
+                    result += thOpen + "Тек. мес." + thClose;
+                    result += "</tr>";
+                    break;
+                case TP_INFO_IDX:
+                default:
+                    break;
+            }
+            return result;
+        }
+
+        function getSellerInfo(olName, olAddress) {
+            var html = 	"<tr><td><b>ТТ:</b></td><td>{0}</td></tr>" +
+                "<tr><td><b>Адрес:</b></td><td>{1}</td></tr>";
+            return html.format([olName, olAddress]);
+        }
+        var olSalePlanRows = new Array('Сумма:', 'Кол. накл.:', 'Ср. отгр.:', 'Ассортим.:');
+        var wholeSalePlanRows = new Array('Сумма:', 'Кол. накл.:', 'Ср. отгр.:', 'Ит. асс.:', 'Ассортим.:');
+
+        function getOutletSalePlan(rowArray, colPrev2Array, colPrev1Array, colCurrArray) {
+            var SUM_ROW = 0;
+            var AVG_SUM_ROW = 2;
+            var html = "";
+            var htmlRow = "<tr><td><b>{0}</b></td><td>{1}</td><td>{2}</td><td>{3}</td></tr>";
+            for (i=0; i < rowArray.length; i++) {
+                var num = 0;
+                if (i == SUM_ROW || i == AVG_SUM_ROW) {
+                    num = 2;
+                }
+                html += htmlRow.format([rowArray[i], formatCurrency(colPrev2Array[i],num), formatCurrency(colPrev1Array[i],num), formatCurrency(colCurrArray[i],num)]);
+            }
+            return html;
+        }
+
+        function getTable(idx) {
+            var table = "<table border='1'>";
+            table += getHeader(idx);
+            switch(idx) {
+                case TP_INFO_IDX:
+                    Statement.Step();
+                    var outlet_name = Statement.ColumnValue(Statement.ColumnName(0));
+                    var outlet_address = Statement.ColumnValue(Statement.ColumnName(1));
+                    table += getSellerInfo(outlet_name, outlet_address);
+                    break;
+                case SALES_CURRENT_OUTLET_IDX:
+                case SALES_IDX:
+                    var RowCount = Statement.RowCount;
+                    var pre2Array = new Array();
+                    var prev1Array = new Array();
+                    var currArray = new Array();
+                    var rowArray = (idx == SALES_CURRENT_OUTLET_IDX ? olSalePlanRows : wholeSalePlanRows);
+                    Statement.Step();
+                    for (j = 0; j < rowArray.length; j++) {
+                        currArray[j] = Statement.ColumnValue(Statement.ColumnName(j));
+                    }
+                    Statement.Step();
+                    for (j = 0; j < rowArray.length; j++) {
+                        prev1Array[j] = Statement.ColumnValue(Statement.ColumnName(j));
+                    }
+                    Statement.Step();
+                    for (j = 0; j < rowArray.length; j++) {
+                        pre2Array[j] = Statement.ColumnValue(Statement.ColumnName(j));
+                    }
+                    table += getOutletSalePlan(rowArray, pre2Array, prev1Array, currArray);
+                    break;
+                default:
+                    break;
+            }
+            table += "</table>";
+            return table;
+        }
+
+        const TP_INFO_IDX = 1;
+        const SALES_CURRENT_OUTLET_IDX = 2;
+        const SALES_IDX = 3;
+
+        function formatCurrency(num, val) {
+            num = isNaN(num) || num === '' || num === null ? 0.00 : num;
+            return parseFloat(num).toFixed(val);
+        }
+        // This is the function.
+        String.prototype.format = function (args) {
+            var str = this;
+            return str.replace(String.prototype.format.regex, function(item) {
+                var intVal = parseInt(item.substring(1, item.length - 1));
+                var replace;
+                if (intVal >= 0) {
+                    replace = args[intVal];
+                } else if (intVal === -1) {
+                    replace = "{";
+                } else if (intVal === -2) {
+                    replace = "}";
+                } else {
+                    replace = "";
+                }
+                return replace;
+            });
+        };
+        String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
+        String.prototype.formatNumber = function() {
+            var formatted = this;
+            for (var i = 0; i < arguments.length; i++) {
+                var regexp = new RegExp('\\{'+i+'\\}', 'gi');
+                formatted = formatted.replace(regexp, arguments[i]);
+            }
+            return formatted;
+        };
+        function spaceBrakes() {
+            return "<br>";
+        }
+    </script>
+</head>
+<body onload="Show()">
+</body>
+</html>

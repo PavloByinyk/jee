@@ -1,0 +1,242 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<html>
+<head>
+    <meta content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="../materialize.css" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="../dblink.js"></script>
+    <script language="JavaScript">
+        var Statement = null;
+        var StatementMain = null;
+
+        var outletId = 0;
+
+        function PrepareStatement(Sql) {
+            Statement = Connection.Prepare(Sql);
+        }
+
+        function PrepareStatementMain(Sql) {
+            StatementMain = Connection.Prepare(Sql);
+        }
+
+        function CloseStatement() {
+            Statement.Close();
+        }
+
+        function CloseStatementMain() {
+            StatementMain.Close();
+        }
+
+        function isDefined(type) {
+            return type != '' && type != 'unknown';
+        }
+
+        function getDOMElementById(id, doc) {
+            if (!isDefined(doc)) {
+                doc = document;
+            }
+            if (isDefined(typeof doc.getElementById)) {
+                return doc.getElementById(id);
+            } else if (isDefined(typeof document.all)) {
+                return doc.all[id];
+            } else {
+                throw new Error("Can not find a method to locate DOM element.");
+                return null;
+            }
+        }
+
+
+        function getMainTableHeader() {
+
+            var sql = "SELECT ou.OLDeliveryAddress ADDRESS, ou.OL_Id OL_ID FROM tblMobileReportsD mph LEFT JOIN  tblOutlets ou ON ou.OL_Id = mph.Bigint1 Left JOIN tblOutletCardH och ON och.OL_Id = mph.Bigint1 WHERE och.Edit=1 GROUP BY ou.OL_Id";
+            // PrepareStatement(sql);
+            // var RowCount = Statement.RowCount;
+            //
+            // for (var i = 0; i < RowCount; i++) {
+            //     Statement.Step();
+            //     var deliveryAddress = Statement.ColumnValue("ADDRESS");
+            //     outletId = Statement.ColumnValue("OL_ID");
+            // }
+            // CloseStatement();
+
+            var result = "<table style=\"table-layout:auto;\" class=\"custom\">";
+            result += "<thead>";
+            result += "<tr><div>";
+            var thOpen = "<th><div>";
+            var thClose = "</div></th>";
+            var trOpen = "<tr class=\"custom greyRow\"><div>";
+            var trClose = "</div></tr>";
+
+            result += "<th colspan=\"4\" class=\"custom greyRow\" ><div>История вз/расчетов: " + "adsd" + "</div></th>";
+
+            result += trOpen;
+
+            result += thOpen + "Дата" + thClose;
+            result += thOpen + "Документ" + thClose;
+            result += thOpen + "Расход" + thClose;
+            result += thOpen + "Приход" + thClose;
+
+            result += trClose;
+            result += "</thead>";
+            result += "</div></tr>";
+            result += "<tbody>";
+            return result;
+        }
+
+        function getMainTable() {
+            var resultHTML = getMainTableHeader();
+
+            var sql = "SELECT " +
+                            "mrd.Num1 START_BALANCE, mrd.Num2 CURRENT_BALANCE, strftime('%d.%m.%Y',mrd.Date1) MDATE, mrd.Char1 DOCUMENT, mrd.Num3 OUTGO, mrd.Num4 INCOMING " +
+                        "FROM tblMobileReportsH mrh " +
+                        "INNER JOIN tblMobileReportsD mrd ON mrh.Report_Id = mrd.Report_Id " +
+                        "INNER JOIN tblOutlets o ON mrd.Bigint1 = o.OL_Id AND mrh.Merch_Id = o.Owner_Id " +
+                        "WHERE mrh.Status <> 9 AND mrd.Bigint1 = {0}".formatNumber(outletId);
+            // PrepareStatementMain(sql);
+
+            var result = "";
+            // var RowCountMain = StatementMain.RowCount;
+            var tdOpen = "<td><div style='text-align: center'>";
+            var trOpen = "<tr>";
+            var tdClose = "</div></td>";
+            var trClose = "</tr>";
+
+            var startBalance = '0.0';
+            var current_balance = '0.0';
+
+            // for (var j = 0; j < RowCountMain; j++) {
+            //      StatementMain.Step();
+            //      startBalance = StatementMain.ColumnValue("START_BALANCE");
+            //      current_balance = StatementMain.ColumnValue("CURRENT_BALANCE");
+            //      var date = StatementMain.ColumnValue("MDATE");
+            //      var document = StatementMain.ColumnValue("DOCUMENT");
+            //      var outgo = StatementMain.ColumnValue("OUTGO");
+            //      var incoming = StatementMain.ColumnValue("INCOMING");
+            //
+            //      if(j===0) result += trOpen + "<th colspan=\"4\"><div style='text-align: left'>Начальный баланс: " + startBalance + "</div></th>" + trClose;
+            //
+            //     result += trOpen;
+            //     result += tdOpen + date + tdClose;
+            //     result += tdOpen + document + tdClose;
+            //     result += tdOpen + outgo + tdClose;
+            //     result += tdOpen + incoming + tdClose;
+            //
+            //     result += trClose;
+            //
+            // }
+            // CloseStatementMain();
+
+            // if(RowCountMain===0)
+                result += trOpen + "<th colspan=\"4\"><div style='text-align: left'>Начальный баланс: " + startBalance + "</div></th>" + trClose;
+            result += "<th class=\"custom\" colspan=\"4\"><div style='text-align: left'>Текущий баланс: " + current_balance + "</div></th>";
+
+            result += "</table>";
+            resultHTML += result;
+            return resultHTML;
+        }
+
+
+        function Show() {
+            endLoading();
+            loadData();
+        }
+
+        function loadData() {
+            endLoading();
+            var result = "";
+            result += getMainTable();
+            getDOMElementById("table", document).innerHTML = result;
+        }
+
+        function loading() {
+            getDOMElementById("loading-div", document).style.visibility = "visible";
+        }
+
+        function endLoading() {
+            getDOMElementById("loading-div", document).style.visibility = "hidden";
+        }
+
+        function load() {
+            loading();
+            setTimeout(Show, 100);
+        }
+    </script>
+
+</head>
+<body >
+<style>
+    html {
+        font-family: sans-serif;
+    }
+
+    table.custom {
+        width: 100%;
+        border-collapse: collapse;
+        /*border: 0.5px solid gray;*/
+    }
+
+    table.custom th {
+        text-align: center;
+        position: relative;
+        padding: 15px 20px;
+        border: 1px solid #6a6a6a;
+    }
+
+    table.custom td {
+        padding: 10px;
+    }
+
+    .table.custom-horizontal td,
+    .table.custom-horizontal th {
+        border-width: 0 0 1px 0;
+        border-bottom: 1px solid #cbcbcb;
+    }
+
+    table.custom td {
+        background-color: transparent;
+    }
+
+    table.custom td.div left {
+        text-align: left;
+    }
+
+    table.custom tr:nth-child(2n-1) td {
+        background-color: #f2f2f2;
+    }
+
+    .wrapper span {
+        font-size: 16px;
+        color: #777;
+    }
+
+    #loading-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+
+<div id="table" style="padding: 10px"></div>
+<div id="loading-div">
+    <!--<div id="myBody" style="padding-top: 10px; padding-bottom: 10px"></div>-->
+    <!--<div id="table" style="padding-top: 10px; padding-bottom: 10px"></div>-->
+</div>
+
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../materialize.js"></script>
+<script>
+    load();
+
+    String.prototype.formatNumber = function() {
+        var formatted = this;
+        for (var i = 0; i < arguments.length; i++) {
+            var regexp = new RegExp('\\{'+i+'\\}', 'gi');
+            formatted = formatted.replace(regexp, arguments[i]);
+        }
+        return formatted;
+    };
+</script>
+</body>
+</html>

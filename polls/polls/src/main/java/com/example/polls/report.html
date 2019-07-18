@@ -1,0 +1,1364 @@
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <style>
+
+
+        /*!
+        * jquery.fixedHeaderTable. The jQuery fixedHeaderTable plugin
+        *
+        * Copyright (c) 2011 Mark Malek
+        * http://fixedheadertable.com
+        *
+        * Licensed under MIT
+        * http://www.opensource.org/licenses/mit-license.php
+        *
+        * http://docs.jquery.com/Plugins/Authoring
+        * jQuery authoring guidelines
+        *
+        * Launch  : October 2009
+        * Version : 1.3
+        * Released: May 9th, 2011
+        *
+        *
+        * all CSS sizing (width,height) is done in pixels (px)
+        */
+
+        /* @group Reset */
+
+        .fht-table,
+        .fht-table thead,
+        .fht-table tfoot,
+        .fht-table tbody,
+        .fht-table tr,
+        .fht-table th,
+        .fht-table td {
+            /* position */
+            margin: 0;
+
+            /* size */
+            padding: 0;
+
+            /* text */
+            font-size: 100%;
+            font: inherit;
+            vertical-align: top;
+        }
+
+        .fht-table {
+            /* appearance */
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* @end */
+
+        /* @group Content */
+
+        .fht-table-wrapper,
+        .fht-table-wrapper .fht-thead,
+        .fht-table-wrapper .fht-tfoot,
+        .fht-table-wrapper .fht-fixed-column .fht-tbody,
+        .fht-table-wrapper .fht-fixed-body .fht-tbody,
+        .fht-table-wrapper .fht-tbody {
+            /* appearance */
+            overflow: hidden;
+
+            /* position */
+            position: relative;
+        }
+
+        .fht-table-wrapper .fht-fixed-body .fht-tbody,
+        .fht-table-wrapper .fht-tbody {
+            /* appearance */
+            overflow: auto;
+        }
+
+        .fht-table-wrapper .fht-table .fht-cell {
+            /* appearance */
+            overflow: hidden;
+
+            /* size */
+            height: 1px;
+        }
+
+        .fht-table-wrapper .fht-fixed-column,
+        .fht-table-wrapper .fht-fixed-body {
+            /* position */
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .fht-table-wrapper .fht-fixed-column {
+            /* position */
+            z-index: 1;
+        }
+
+        /* @end */
+
+        tr.spaceUnder > td {
+            /*padding-bottom: 0.5em;*/
+        }
+
+        html {
+            font-family: sans-serif;
+        }
+
+        label.custom-select {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Select arrow styling */
+        select {
+            display: inline-block;
+            border: 2px solid #8F8E8E;
+            padding: 4px 3px 3px 5px;
+            margin: 0;
+            font: inherit;
+            outline: none; /* remove focus ring from Webkit */
+            line-height: 1.2;
+            background: #f8f8f8;
+             -webkit-appearance: none;
+            /* remove the strong OSX influence from Webkit */
+             -webkit-border-radius: 6px;
+             -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        /* for Webkit's CSS-only solution */
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .custom-select select {
+                padding-right: 30px;
+            }
+        }
+
+        /* Since we removed the default focus styles, we have to add our own */
+        .custom-select select:focus {
+             -webkit-box-shadow: 0 0 3px 1px #c00;
+             -moz-box-shadow: 0 0 3px 1px #c00;
+            box-shadow: 0 0 3px 1px #c00;
+        }
+
+        /* Select arrow styling */
+        .custom-select:after {
+            content: "▼";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 60%;
+            line-height: 30px;
+            padding: 0 7px;
+            background: #8F8E8E;
+            color: white;
+            pointer-events: none;
+             -webkit-border-radius: 0 6px 6px 0;
+             -moz-border-radius: 0 6px 6px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .no-pointer-events .custom-select:after {
+            content: none;
+        }
+
+        .datagrid table {
+            border-collapse: collapse;
+            text-align: left;
+            width: 100%;
+        }
+
+        .datagrid {
+            font: normal 12px/150% Arial, Helvetica, sans-serif;
+
+        }
+
+        .datagrid table td, .datagrid table th {
+            padding: 3px 10px;
+            width: 100px;
+        }
+
+        .datagrid table thead th:first-child {
+            border: none;
+        }
+
+        .datagrid table tbody td {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .datagrid table tbody .g0_0 td {
+        }
+
+        .datagrid table tbody .g0_1 td {
+            background: #D2DADB;
+        }
+
+        .datagrid table tbody td:first-child {
+            border-left: none;
+        }
+
+        .datagrid table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        div.dhtmlx_window_active, div.dhx_modal_cover_dv {
+            position: fixed !important;
+        }
+
+        <!--
+        FOR progress dialog
+
+        -->
+        #loading-div-background {
+            display: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        #loading-div {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        .pure-table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            empty-cells: show;
+            border: none;
+            width: 100%
+        }
+        .pure-table caption {
+            color: #000;
+            font: italic 85%/1 arial, sans-serif;
+            padding: 1em 0;
+            text-align: left;
+        }
+        .pure-table td,
+        .pure-table th {
+            border-width: 0 0 0 0;
+            font-size: inherit;
+            margin: 0;
+            background-color: white;
+            overflow: visible;
+            padding: 0.5em 0.3em;
+            font-family: "Open Sans";
+            color: #3c3c3c;
+        }
+        .pure-table td:first-child,
+        .pure-table th:first-child {
+            border-left-width: 0;
+        }
+        .pure-table thead {
+            background-color: #e0e0e0;
+            color: #000;
+            text-align: left;
+            vertical-align: bottom;
+        }
+        .pure-table td {
+            background-color: transparent;
+        }
+        .pure-table-odd td {
+            background-color: #f2f2f2;
+        }
+        .pure-table-striped tr:nth-child(2n-1) td {
+            background-color: #f2f2f2;
+        }
+        .pure-table-bordered td {
+            border-bottom: 1px solid #cbcbcb;
+        }
+        .pure-table-bordered tbody > tr:last-child > td {
+            border-bottom-width: 0;
+        }
+        .pure-table-horizontal td,
+        .pure-table-horizontal th {
+            border-width: 0 0 1px 0;
+            border-bottom: 1px solid #cbcbcb;
+        }
+        .pure-table-horizontal tbody > tr:last-child > td {
+            border-bottom-width: 0;
+        }
+
+        .last-table-striped tr:last-child td {
+            background-color: white;
+        }
+
+        .last-table-striped tr:nth-child(2n-1) td {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+    <link type="text/css" rel="stylesheet" href="../materialize.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="../styled_datepicker.css" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../DatePickerLocale.js"></script>
+
+    <script language="javascript">
+
+
+        var inputStartDate;
+        var inputEndDate;
+
+        // -- Ex dblink.js with small changes
+        var Connection = new function () {
+            this.Prepare = function (sqlQuery) {
+                var res = ConnectionProxy.PrepareJSON(sqlQuery);
+                var resProxy = new JSONProxy(JSON.parse(res));
+                return new StatementProxy(resProxy);
+            }
+        }
+
+        var StatementProxy = function (stat) {
+            var statement = stat;
+            this.RowCount = stat.RowCount();
+            this.ColumnCount = stat.ColumnCount();
+            this.Reset = function () {
+                statement.Reset();
+            }
+            this.Close = function () {
+                statement.Close();
+            }
+            this.Step = function () {
+                return statement.Step();
+            }
+            this.StepPrev = function () {
+                return statement.StepPrev();
+            }
+            this.MoveToPos = function (pos) {
+                return statement.MoveToPos(pos);
+            }
+            this.ColumnValue = function (columnName) {
+                return statement.ColumnValue(columnName);
+            }
+            this.ColumnName = function (index) {
+                return statement.ColumnName(index);
+            }
+        }
+
+        var JSONProxy = function (obj) {
+            var jsonObjPrev = obj;
+            var step = -1;
+            this.RowCount = function () {
+                return jsonObjPrev.data.length;
+            }
+            this.ColumnCount = function () {
+                return jsonObjPrev.column.length;
+            }
+            this.Reset = function () {
+            }
+            this.Close = function () {
+            }
+            this.Step = function () {
+                step++;
+            }
+            this.StepPrev = function () {
+                step--;
+            }
+            this.ColumnValue = function (columnName) {
+                return eval('jsonObjPrev.data[' + step + '][\'' + columnName + '\']');
+            }
+            this.ColumnName = function (index) {
+                return eval('jsonObjPrev.column[' + index + ']');
+            }
+            this.PrepareJSON = function () {
+            }
+        }
+        // -- END of Ex dblink.js with small changes
+
+        // ----------VARIABLES------------
+        var Statement = null;
+        var currDate = new Date();
+        var startOfMonth = new Date(currDate.getFullYear(), currDate.getMonth(), 1);
+        // INPUT
+        var inputStartDate;
+        var inputEndDate;
+        var type;
+        var planingPeriod = 'null';
+        var planingSubject = 'null';
+        var isSummary;
+
+        var allRadioButton;
+        var dayRadioButton;
+        var weekRadioButton;
+        var monthRadioButton;
+
+        var allDivElement;
+        var dayDivElement;
+        var weekDivElement;
+        var monthDivElement;
+
+        var ttRadioButton;
+        var tpRadioButton;
+
+        // CONSTANTS
+        var CONSTS = {
+            'ordering': '0',
+            'sales': '1',
+            'outlet': '2',
+            'merch': '13',
+            'all': '0',
+            'month': '3',
+            'week': '2',
+            'day': '1',
+        };
+        var monthNames = [ "Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень",
+            "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень" ];
+        var period = ["Всі","День","Тиждень","Місяць"];
+
+        ////////////// COMMON FUNCTIONS //////////////////////////////
+        function format_number(pnumber, decimals) {
+            if (isNaN(pnumber)) {
+                return 0
+            }
+            ;
+            if (pnumber == '') {
+                return 0
+            }
+            ;
+
+            var snum = new String(pnumber);
+            var sec = snum.split('.');
+            var whole = parseFloat(sec[0]);
+            var result = '';
+
+            if (sec.length > 1) {
+                var dec = new String(sec[1]);
+                dec = String(parseFloat(sec[1]) / Math.pow(10, (dec.length - decimals)));
+                dec = String(whole + Math.round(parseFloat(dec)) / Math.pow(10, decimals));
+                var dot = dec.indexOf('.');
+                if (dot == -1) {
+                    dec += '.';
+                    dot = dec.indexOf('.');
+                }
+                while (dec.length <= dot + decimals) {
+                    dec += '0';
+                }
+                result = dec.substring(0, dec.indexOf('.') + decimals + 1);
+            } else {
+                var dot;
+                var dec = new String(whole);
+                dec += '.';
+                dot = dec.indexOf('.');
+                while (dec.length <= dot + decimals) {
+                    dec += '0';
+                }
+                result = dec.substring(0, dec.indexOf('.') + decimals + 1);
+            }
+            return result.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function formatDate(date) {
+            return ('0' + date.getDate()).slice(-2) + '/'
+                + ('0' + (date.getMonth() + 1)).slice(-2) + '/'
+                + date.getFullYear() + " " + ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2);
+        }
+
+        function isDefined(type) {
+            return type != 'undefined' && type != 'unknown';
+        }
+
+        function getDOMElementById(id, doc) {
+            if (!isDefined(doc)) {
+                doc = document;
+            }
+            if (isDefined(typeof doc.getElementById)) {
+                return doc.getElementById(id);
+            } else if (isDefined(typeof document.all)) {
+                return doc.all[id];
+            } else {
+                throw new Error("Can not find a method to locate DOM element.");
+                return null;
+            }
+        }
+
+        function CloseStatement() {
+            Statement.Close();
+        }
+
+        function PrepareStatement(Sql) {
+            Statement = Connection.Prepare(Sql);
+        }
+
+        function ResetStatement() {
+            Statement.Reset();
+        }
+
+        function addOptionToCb(comboId, value, label) {
+            var combo = document.getElementById(comboId);
+
+            var option = document.createElement("option");
+            option.text = label;
+            option.value = value;
+            try {
+                combo.add(option, null); //Standard
+            } catch (error) {
+                combo.add(option); // IE only
+            }
+        }
+
+        function prepareDate(s) {
+            var dt = new Date(s);
+            var resStr = dt.getFullYear();
+            if ((new String(dt.getMonth() + 1)).length < 2) {
+                resStr += "-0" + (dt.getMonth() + 1);
+            } else {
+                resStr += "-" + (dt.getMonth() + 1);
+            }
+            if ((new String(dt.getDate())).length < 2) {
+                resStr += "-0" + dt.getDate();
+            } else {
+                resStr += "-" + dt.getDate();
+            }
+            return resStr;
+        }
+
+        function getDateFromString(s) {
+            s = s.replace(/[\-|\.|_]/g, "/");
+            return (new Date(Date.parse(s)));
+        }
+
+        function setBeginDate(timeInMillis) {
+            var date = new Date(timeInMillis);
+            document.getElementById("startDateTimePicker").value = prepareDate(date);
+            DateValidate();
+        }
+
+        function setEndDate(timeInMillis) {
+            var date = new Date(timeInMillis);
+            document.getElementById("endDateTimePicker").value = prepareDate(date);
+            DateValidate();
+        }
+
+        function callBeginDatepicker() {
+            DateTimePicker.ShowDateTimePicker('setBeginDate', document.getElementById("startDateTimePicker").value);
+        }
+
+        function callEndDatepicker() {
+            DateTimePicker.ShowDateTimePicker('setEndDate', document.getElementById("endDateTimePicker").value);
+        }
+
+        function recalcPeriod() {
+            allDivElement.style.display = 'none';
+            dayDivElement.style.display = 'none';
+            weekDivElement.style.display = 'none';
+            monthDivElement.style.display = 'none';
+
+            if (planingSubject != -1) {
+                var sqlSPP = "SELECT SubjectTypeId, SalePlanPeriod FROM tblSalePlanPropertiesN " +
+                    "WHERE SalePlanDateFrom <= julianday('" + inputEndDate + "') AND SalePlanDateTo >= julianday('" + inputStartDate + "')  " +
+                    "AND SalePlanType IN (1, 2, 3, 4, 6, 7) " + ((planingSubject == 'null') ? "" : "AND SubjectTypeId = " + planingSubject) + " GROUP BY SalePlanPeriod";
+                var value;
+                var locStat = Connection.Prepare(sqlSPP);
+
+                allDivElement.style.display = 'block';
+                allRadioButton.value = 0;
+                allRadioButton.checked = true;
+
+                var RowCount = locStat.RowCount;
+                for (var i = 0; i < RowCount; i++) {
+                    locStat.Step();
+                    value = locStat.ColumnValue(locStat.ColumnName(1));
+                    switch (value) {
+                        case CONSTS.day:
+                            dayDivElement.style.display = 'block';
+                            dayRadioButton.value = value;
+                            break;
+                        case CONSTS.week:
+                            weekDivElement.style.display = 'block';
+                            weekRadioButton.value = value;
+                            break;
+                        case CONSTS.month:
+                            monthDivElement.style.display = 'block';
+                            monthRadioButton.value = value;
+                            break;
+                    }
+                }
+                locStat.Close();
+                readInput();
+            }
+        }
+
+        function recalcSubject() {
+            ttRadioButton.disabled = true;
+            ttRadioButton.checked = false;
+            tpRadioButton.disabled = true;
+            tpRadioButton.checked = false;
+
+            var sqlSTI = "SELECT SubjectTypeId, SalePlanPeriod FROM tblSalePlanPropertiesN " +
+                "WHERE SalePlanDateFrom <= julianday('" + inputEndDate + "') AND SalePlanDateTo >= julianday('" + inputStartDate + "')  " +
+                "AND SalePlanType IN (1, 2, 3, 4, 6, 7) GROUP BY SubjectTypeId";
+            var value;
+            var locStat = Connection.Prepare(sqlSTI);
+            var RowCount = locStat.RowCount;
+            for (var i = 0; i < RowCount; i++) {
+                locStat.Step();
+                value = locStat.ColumnValue(locStat.ColumnName(0));
+                if (value == 2) {
+                    ttRadioButton.value = 2;
+                    ttRadioButton.disabled = false;
+                    ttRadioButton.checked = true;
+                } else {
+                    tpRadioButton.value = value;
+                    tpRadioButton.disabled = false;
+                    tpRadioButton.checked = !ttRadioButton.checked;
+                }
+            }
+            locStat.Close();
+            readInput();
+        }
+
+        function getSql() {
+            var sql;
+            var groupBy = planingSubject == CONSTS.outlet
+                ? "SalePlan_Id,SubjectId, Item_Id,units,( CASE WHEN planePeriod = 1 THEN date WHEN planePeriod = 2 THEN week WHEN planePeriod = 3 THEN month END )" : "SalePlan_Id,Item_Id,units, date";
+
+            var sqlLocal = "SELECT sum(PrefValue) isLocal FROM tblPreferences WHERE Pref_Id IN (52,53)";
+            var isLocal = false;
+            var locStat = Connection.Prepare(sqlLocal);
+            for (var i = 0; i < locStat.RowCount; i++) {
+                locStat.Step();
+                isLocal = parseInt(locStat.ColumnValue(locStat.ColumnName(0))) == 2;
+            }
+            locStat.Close();
+
+            var prodSubQuerySql =
+                "SELECT ood.Product_qty curOrderQty, " +
+                "ood.Price * (ood.VAT / 100.0 + 1) AS PriceCurrent, " +
+                (isLocal ? "sld.Product_qty" : "sd.Product_qty") + " Product_qty, " +
+                "sh.DATE sDate, " +
+                (isLocal ? "sld.Price * (sld.Vat / 100.0 + 1)" : "sd.Price * (sd.Vat / 100.0 + 1)") + " Price, " +
+                (isLocal ? "lp.LocalProductShortName" : "p.ProductShortName") + " ProductShortName, " +
+                "sh.Invoice_Id, " +
+                "p.*, " +
+                "sh.Ol_Id " +
+                "FROM tblSalOutH sh " +
+                (isLocal ? ("INNER JOIN tblSalOutLocalD sld ON sld.Invoice_Id = sh.Invoice_Id " +
+                        "INNER JOIN tblLocalProducts lp ON sld.LocalProductCode = lp.LocalProductCode " +
+                        "LEFT JOIN tblOutletOrderD ood ON lp.Product_Id = ood.Product_Id AND ood.Edit = 1")
+                        : ("INNER JOIN tblSalOutD sd ON sd.Invoice_Id = sh.Invoice_Id " +
+                            "INNER JOIN tblProducts p ON sd.Product_Id = p.Product_Id " +
+                            "LEFT JOIN tblOutletOrderD ood ON p.Product_Id = ood.Product_Id AND ood.Edit = 1")
+                );
+
+            switch (type) {
+                case CONSTS.ordering:
+                    sql =
+                        "SELECT *, sum(suma) sumSuma, sum(curOrderSum) curFact FROM (" +
+                        "	SELECT " +
+                        "	dt.*,spp.SalePlanPeriod planePeriod," +
+                        "	spu.SubjectId,spu.Item_Id, ifnull(( SELECT (CASE WHEN ((SELECT PrefValue FROM tblPreferences WHERE Pref_id = -15 )= 1 ) THEN OLTradingName ELSE OLName END) FROM tblOutlets WHERE OL_Id = spu.SubjectId), 'xxx') OLName, " +
+                        "	( SELECT ( CASE WHEN spp.SalePlanType = 2 THEN (CASE WHEN (SELECT sum(PrefValue) PrefValueSum FROM tblPreferences WHERE Pref_Id IN (52,53)) = 2 THEN lp.LocalProductShortName ELSE pp.ProductShortName END) WHEN spp.SalePlanType = 3 THEN pt.ProductTypeShortName WHEN spp.SalePlanType = 4 THEN pg.ProdGroupShortName WHEN spp.SalePlanType = 6 THEN pcb.ProductCombineShortName WHEN spp.SalePlanType = 7 THEN pc.ProdCategoryShortName WHEN spp.SalePlanType = 1 THEN ( SELECT LValue FROM tblGlobalLookup WHERE TableName = 'tblSalePlanProperties' AND FieldName = 'SalePlanType' AND LKey = spp.SalePlanType LIMIT 1 ) END ) FROM ( SELECT * FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ) pp LEFT JOIN tblProductCategory pc ON pc.ProdCategory_Id = pp.ProdCategory_Id LEFT JOIN tblProductGroups pg ON pg.ProdGroup_Id = pp.ProdGroup_Id LEFT JOIN tblProductTypes pt ON pt.ProductType_Id = pp.ProductType_Id LEFT JOIN tblProductCombine pcb ON pcb.HLCode = pp.HLCode LEFT JOIN tblLocalProducts lp ON pp.Product_Id = lp.Product_Id ) Name, " +
+                        "ifnull(( SELECT NOT ( isProductWeight * spu.Field1 <> 0 ) FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ), 0 ) isPackage, " +
+                        " ( SELECT Package_qty FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ) Package_qty, " +
+                        "	ifnull(prod.Price, 0.0) Price,ifnull(sum(prod.Product_qty), 0.0) prodQtySum, " +
+                        " sum( ifnull(( CASE WHEN spu.Field1 <> 0 THEN ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN ( CASE WHEN IsProductWeight THEN prod.Product_qty / prod.LocalPackageQTY ELSE ( CAST ( prod.Product_qty / prod.LocalPackageQTY AS int ) + prod.Product_qty % prod.LocalPackageQTY / 10 ) END ) ELSE ( CASE WHEN IsProductWeight THEN prod.Product_qty / Package_qty ELSE ( CAST ( prod.Product_qty / Package_qty AS int ) + prod.Product_qty % Package_qty / 10 ) END ) END ) WHEN spu.Field2 <> 0 THEN prod.Product_qty * ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN prod.LocalUnitWeight ELSE UnitWeight END ) WHEN spu.Field3 <> 0 THEN prod.Product_qty * ProductVolume WHEN spu.Field4 <> 0 THEN prod.Product_qty * Price END ), 0 )) suma, " +
+                        "	ifnull((CASE WHEN spu.Field1 <> 0 THEN ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN ( CASE WHEN IsProductWeight THEN sum(prod.curOrderQty) / prod.LocalPackageQTY ELSE ( CAST ( sum(prod.curOrderQty) / prod.LocalPackageQTY AS int ) + sum(prod.curOrderQty) % prod.LocalPackageQTY / 10 ) END ) ELSE ( CASE WHEN IsProductWeight THEN sum(prod.curOrderQty) / Package_qty ELSE ( CAST ( sum(prod.curOrderQty) / Package_qty AS int ) + sum(prod.curOrderQty) % Package_qty / 10 ) END ) END )" +
+                        "		WHEN spu.Field2 <> 0 THEN sum(prod.curOrderQty) * ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN prod.LocalUnitWeight ELSE UnitWeight END ) " +
+                        "		WHEN spu.Field3 <> 0 THEN sum(prod.curOrderQty) * ProductVolume" +
+                        "		WHEN spu.Field4 <> 0 THEN sum(prod.curOrderQty) * Price END" +
+                        "	),0) curOrderSum ," +
+                        "	spu.planVal,ifnull(prod.OrderNo, -1) OrderNo,spu.SalePlan_Id, " +
+                        "	(SELECT LValue FROM tblGlobalLookup WHERE TableName = 'tblSalePlanProperties' AND FieldName = 'SalePlanType' AND LKey = spp.SalePlanType LIMIT 1) sptName, " +
+                        "	(SELECT SalePlanUnitsShortName FROM tblSalePlanUnitsNames WHERE Fields = (CASE WHEN spu.Field1 <> 0 THEN 1 WHEN spu.Field2 <> 0 THEN 2 WHEN spu.Field3 <> 0 THEN 3 WHEN spu.Field4 <> 0 THEN 4 END)) units " +
+                        "	FROM " +
+                        "	(WITH RECURSIVE " +
+                        "	dates(dt) as ( SELECT date('" + inputStartDate + "') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE date(dt) < date('" + inputEndDate + "') ) " +
+                        "	SELECT dt date,strftime('%m', dt) month ,strftime('%W', dt) week FROM dates WHERE dt NOT IN (SELECT date(Holiday) FROM tblHolidays)) dt " +
+                        "	INNER JOIN tblSalePlanPropertiesN spp ON date(spp.SalePlanDateFrom) <= date(date) AND date(spp.SalePlanDateTo) >= date(date) AND spp.SalePlanType IN (1,2,3,4,6,7) AND spp.SubjectTypeId =" + planingSubject + ((planingPeriod == CONSTS.all) ? " " : " AND spp.SalePlanPeriod = " + planingPeriod) +
+                        "	INNER JOIN tblSalePlanUnitsUses spuu ON spuu.SalePlan_Id = spp.SalePlan_Id AND (spuu.Field1 <> 0 OR spuu.Field2 <> 0 OR spuu.Field3 <> 0 OR spuu.Field4 <> 0) " +
+                        "	INNER JOIN (SELECT SalePlan_Id, Item_Id , SubjectId, Field1,null Field2,null Field3,null Field4, Field1 planVal FROM tblSalePlanUnits WHERE Field1 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1, Field2,null Field3,null Field4, Field2 planVal FROM tblSalePlanUnits WHERE Field2 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1, null Field2,Field3,null Field4, Field3 planVal FROM tblSalePlanUnits WHERE Field3 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1,null Field2, null Field3, Field4, Field4 planVal FROM tblSalePlanUnits WHERE Field4 > 0 ) spu ON spu.SalePlan_Id = spuu.SalePlan_Id " +
+                        "	LEFT JOIN ( " +
+                        "		SELECT " +
+                        "			(CASE WHEN ood.Edit = 0 THEN Product_qty ELSE 0 END) Product_qty, " +
+                        "			(CASE WHEN ood.Edit = 1 THEN Product_qty ELSE 0 END) curOrderQty,Price * (ood.VAT/100.0 +1) as Price, * " +
+                        "			FROM tblOutletOrderD ood " +
+                        "			LEFT JOIN tblOutletOrderH ooh ON ooh.OrderNo = ood.OrderNo " +
+                        "			LEFT JOIN tblOutletCardH och ON och.OlCard_Id = ooh.OlCard_Id AND ooh.Edit = och.Edit " +
+                        "			LEFT JOIN tblProducts p ON p.Product_Id = ood.Product_Id " +
+                        "			LEFT JOIN tblLocalProducts lp ON p.Product_Id = lp.Product_Id ) prod " +
+                        "	ON (spu.Item_Id  = (CASE WHEN spp.SalePlanType = 2 THEN prod.Product_Id WHEN spp.SalePlanType = 3 THEN prod.ProductType_Id WHEN spp.SalePlanType = 4 THEN prod.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN prod.HLCode WHEN spp.SalePlanType = 7 THEN prod.ProdCategory_Id END) OR spp.SalePlanType = 1) AND date(prod.OLOrderDate) = date(dt.date) AND prod.Ol_Id = (CASE WHEN spp.SubjectTypeId = 2 THEN spu.SubjectId ELSE prod.Ol_Id END) " +
+                        "	GROUP BY spp.SalePlan_Id, SubjectId,prod.Product_Id, Item_Id, units,date " +
+                        ") WHERE Name NOTNULL " +
+                        "GROUP BY " + groupBy +
+                        " ORDER BY planePeriod DESC ,SalePlan_Id,Item_Id,units, (CASE WHEN planePeriod = 1 THEN date WHEN planePeriod = 2 THEN week WHEN planePeriod = 3 THEN month END),date;";
+                    break;
+                case CONSTS.sales:
+                    sql =
+                        "SELECT *, sum(suma) sumSuma,sum(curOrderSum) curFact FROM ( " +
+                        "	SELECT " +
+                        "	dt.*,spp.SalePlanPeriod planePeriod," +
+                        "	spu.SubjectId,spu.Item_Id, (SELECT (CASE WHEN ((SELECT PrefValue FROM tblPreferences WHERE Pref_id=-15) = 1 ) THEN OLTradingName ELSE OLName END) FROM tblOutlets WHERE OL_Id = spu.SubjectId) OLName, " +
+                        "	( SELECT ( CASE WHEN spp.SalePlanType = 2 THEN (CASE WHEN (SELECT sum(PrefValue) PrefValueSum FROM tblPreferences WHERE Pref_Id IN (52,53)) = 2 THEN lp.LocalProductShortName ELSE pp.ProductShortName END) WHEN spp.SalePlanType = 3 THEN pt.ProductTypeShortName WHEN spp.SalePlanType = 4 THEN pg.ProdGroupShortName WHEN spp.SalePlanType = 6 THEN pcb.ProductCombineShortName WHEN spp.SalePlanType = 7 THEN pc.ProdCategoryShortName WHEN spp.SalePlanType = 1 THEN ( SELECT LValue FROM tblGlobalLookup WHERE TableName = 'tblSalePlanProperties' AND FieldName = 'SalePlanType' AND LKey = spp.SalePlanType LIMIT 1 ) END ) FROM ( SELECT * FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ) pp LEFT JOIN tblProductCategory pc ON pc.ProdCategory_Id = pp.ProdCategory_Id LEFT JOIN tblProductGroups pg ON pg.ProdGroup_Id = pp.ProdGroup_Id LEFT JOIN tblProductTypes pt ON pt.ProductType_Id = pp.ProductType_Id LEFT JOIN tblProductCombine pcb ON pcb.HLCode = pp.HLCode LEFT JOIN tblLocalProducts lp ON pp.Product_Id = lp.Product_Id ) Name, " +
+                        "ifnull(( SELECT NOT ( isProductWeight * spu.Field1 <> 0 ) FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ), 0 ) isPackage, " +
+                        " ( SELECT Package_qty FROM tblProducts p WHERE spu.Item_Id = ( CASE WHEN spp.SalePlanType = 1 THEN spu.Item_Id WHEN spp.SalePlanType = 2 THEN p.Product_Id WHEN spp.SalePlanType = 3 THEN p.ProductType_Id WHEN spp.SalePlanType = 4 THEN p.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN p.HLCode WHEN spp.SalePlanType = 7 THEN p.ProdCategory_Id END ) LIMIT 1 ) Package_qty, " +
+                        "	prod.Price,sum(prod.Product_qty) prodQtySum, " +
+                        " ifnull(( CASE WHEN spu.Field1 <> 0 THEN ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN ( CASE WHEN prod.IsProductWeight THEN sum(prod.Product_qty) / prod.LocalPackageQTY ELSE ( CAST ( sum(prod.Product_qty) / prod.LocalPackageQTY AS int ) + sum(prod.Product_qty) % prod.LocalPackageQTY / 10 ) END ) ELSE ( CASE WHEN prod.IsProductWeight THEN sum(prod.Product_qty) / prod.Package_qty ELSE ( CAST ( sum(prod.Product_qty) / prod.Package_qty AS int ) + sum(prod.Product_qty) % prod.Package_qty / 10 ) END ) END ) WHEN spu.Field2 <> 0 THEN sum(prod.Product_qty) * ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN prod.LocalUnitWeight ELSE prod.UnitWeight END ) WHEN spu.Field3 <> 0 THEN sum(prod.Product_qty) * prod.ProductVolume WHEN spu.Field4 <> 0 THEN sum(prod.Product_qty) * prod.Price END ), 0 ) suma, " +
+                        " ifnull(( CASE WHEN spu.Field1 <> 0 THEN ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN ( CASE WHEN curOrder.IsProductWeight THEN sum(curOrder.curOrderQty) / curOrder.LocalPackageQTY ELSE ( CAST ( sum(curOrder.curOrderQty) / curOrder.LocalPackageQTY AS int ) + sum(curOrder.curOrderQty) % curOrder.LocalPackageQTY / 10 ) END ) ELSE ( CASE WHEN curOrder.IsProductWeight THEN sum(curOrder.curOrderQty) / curOrder.Package_qty ELSE ( CAST ( sum(curOrder.curOrderQty) / curOrder.Package_qty AS int ) + sum(curOrder.curOrderQty) % curOrder.Package_qty / 10 ) END ) END ) WHEN spu.Field2 <> 0 THEN sum(curOrder.curOrderQty) * ( CASE WHEN ( SELECT prefValue FROM tblPreferences WHERE pref_Id = 52 ) AND spp.SalePlanType = 2 THEN curOrder.LocalUnitWeight ELSE curOrder.UnitWeight END ) WHEN spu.Field3 <> 0 THEN sum(curOrder.curOrderQty) * curOrder.ProductVolume WHEN spu.Field4 <> 0 THEN sum(curOrder.curOrderQty) * curOrder.PriceCurrent END ), 0 ) curOrderSum, " +
+                        "	spu.planVal,prod.Invoice_Id,spu.SalePlan_Id," +
+                        "	(SELECT LValue FROM tblGlobalLookup WHERE TableName = 'tblSalePlanProperties' AND FieldName = 'SalePlanType' AND LKey = spp.SalePlanType LIMIT 1) sptName," +
+                        "	(SELECT SalePlanUnitsShortName FROM tblSalePlanUnitsNames WHERE Fields = (CASE WHEN spu.Field1 <> 0 THEN 1 WHEN spu.Field2 <> 0 THEN 2 WHEN spu.Field3 <> 0 THEN 3 WHEN spu.Field4 <> 0 THEN 4 END)) units" +
+                        "	FROM" +
+                        "	(WITH RECURSIVE" +
+                        "	dates(dt) as ( SELECT date('" + inputStartDate + "') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE date(dt) < date('" + inputEndDate + "') )" +
+                        "	SELECT dt date,strftime('%m', dt) month ,strftime('%W', dt) week FROM dates WHERE dt NOT IN (SELECT date(Holiday) FROM tblHolidays)) dt " +
+                        "	INNER JOIN tblSalePlanPropertiesN spp ON date(spp.SalePlanDateFrom) <= date(date) AND date(spp.SalePlanDateTo) >= date(date) AND spp.SalePlanType IN (1,2,3,4,6,7) AND spp.SubjectTypeId =" + planingSubject + ((planingPeriod == CONSTS.all) ? " " : " AND spp.SalePlanPeriod = " + planingPeriod ) +
+                        "	INNER JOIN tblSalePlanUnitsUses spuu ON spuu.SalePlan_Id = spp.SalePlan_Id AND (spuu.Field1 <> 0 OR spuu.Field2 <> 0 OR spuu.Field3 <> 0 OR spuu.Field4 <> 0)" +
+                        "	INNER JOIN (SELECT SalePlan_Id, Item_Id , SubjectId, Field1,null Field2,null Field3,null Field4, Field1 planVal FROM tblSalePlanUnits WHERE Field1 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1, Field2,null Field3,null Field4, Field2 planVal FROM tblSalePlanUnits WHERE Field2 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1, null Field2,Field3,null Field4, Field3 planVal FROM tblSalePlanUnits WHERE Field3 > 0 " +
+                        "		UNION ALL SELECT SalePlan_Id, Item_Id , SubjectId, null Field1,null Field2, null Field3, Field4, Field4 planVal FROM tblSalePlanUnits WHERE Field4 > 0 ) spu ON spu.SalePlan_Id = spuu.SalePlan_Id " +
+                        "	LEFT JOIN (" + prodSubQuerySql + ") prod " +
+                        "	ON (spu.Item_Id  = (CASE WHEN spp.SalePlanType = 2 THEN prod.Product_Id WHEN spp.SalePlanType = 3 THEN prod.ProductType_Id WHEN spp.SalePlanType = 4 THEN prod.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN prod.HLCode WHEN spp.SalePlanType = 7 THEN prod.ProdCategory_Id END) OR spp.SalePlanType = 1) AND date(prod.sDate) = date(dt.date) AND prod.Ol_Id = (CASE WHEN spp.SubjectTypeId = 2 THEN spu.SubjectId ELSE prod.Ol_Id END)  " +
+                        " LEFT JOIN ( SELECT ( CASE WHEN ood.Edit = 1 THEN ood.Product_qty ELSE 0 END ) curOrderQty, ood.Price * (ood.VAT / 100.0 + 1) AS PriceCurrent, * FROM tblOutletOrderD ood LEFT JOIN tblOutletOrderH ooh ON ooh.OrderNo = ood.OrderNo LEFT JOIN tblOutletCardH och ON och.OlCard_Id = ooh.OlCard_Id AND ooh.Edit = och.Edit LEFT JOIN tblLocalProducts lp ON ood.LocalProductCode = lp.LocalProductCode LEFT JOIN tblProducts p ON p.Product_Id = ood.Product_Id WHERE ood.Edit = 1 ) curOrder ON ( spu.Item_Id = ( CASE WHEN spp.SalePlanType = 2 THEN curOrder.Product_Id WHEN spp.SalePlanType = 3 THEN curOrder.ProductType_Id WHEN spp.SalePlanType = 4 THEN curOrder.ProdGroup_Id WHEN spp.SalePlanType = 6 THEN curOrder.HLCode WHEN spp.SalePlanType = 7 THEN curOrder.ProdCategory_Id END ) OR spp.SalePlanType = 1 ) AND date(curOrder.OLOrderDate) = date(dt.date) AND curOrder.Ol_Id = ( CASE WHEN spp.SubjectTypeId = 2 THEN spu.SubjectId ELSE curOrder.Ol_Id END ) " +
+                        "	GROUP BY spp.SalePlan_Id,SubjectId,prod.Product_Id, Item_Id,units,date" +
+                        ") WHERE Name NOTNULL " +
+                        "GROUP BY " + groupBy +
+                        " ORDER BY planePeriod DESC ,SalePlan_Id,Item_Id,units, (CASE WHEN planePeriod = 1 THEN date WHEN planePeriod = 2 THEN week WHEN planePeriod = 3 THEN month END),date;";
+                    break;
+            }
+
+            return sql;
+        }
+
+        function getTableBody() {
+            var HTML = "";
+            var sql = getSql();
+            PrepareStatement(sql);
+            var prevObj = 'null';
+            var prevUnits = 'null';
+            var prevPeriod = 'null';
+            var nominalPlanSum = 0;
+            var factSum = 0;
+            var curFactSum = 0;
+            var curFact = 0;
+            var planCurDay = 0;
+            var planSum = 0.0;
+            var trStyle = "<tr>";
+            var RowCount = Statement.RowCount;
+            var ColumnCount = Statement.ColumnCount;
+            for (var i = 0; i < RowCount; i++) {
+                Statement.Step();
+
+                if ((prevObj != 'null' && prevObj != String(Statement.ColumnValue(Statement.ColumnName(5)))) || (prevUnits != 'null' && prevUnits != String(Statement.ColumnValue(Statement.ColumnName(18))))
+                    || (prevPeriod != 'null' && prevPeriod != getPeriod())) {
+                    HTML += getSumRow(trStyle, factSum, planSum, curFactSum, nominalPlanSum);
+                    factSum = 0;
+                    planSum = 0.0;
+                    curFact = 0;
+                    curFactSum = 0;
+                    nominalPlanSum = 0;
+
+                }
+                planCurDay = parseFloat(getPlanByDays());
+                curFact = parseFloat(Statement.ColumnValue(Statement.ColumnName(20)));
+
+                curFactSum += curFact;
+                if (!isSummary) {
+                    var forecast = ((curFact > 0) ? format_number(((curFact + parseFloat(Statement.ColumnValue(Statement.ColumnName(19)))) / planCurDay) * 100, 2) : ' ');
+                    var implPercents = format_number(parseFloat(Statement.ColumnValue(Statement.ColumnName(19))) / planCurDay * 100, 2);
+                    HTML += trStyle;
+                    HTML += "<td>" + getPlanPeriodName() + "</td>";
+                    HTML += "<td>" + (planingSubject == CONSTS.merch ? Statement.ColumnValue(Statement.ColumnName(0)) : Statement.ColumnValue(Statement.ColumnName(6))) + "</td>";
+                    HTML += "<td>" + Statement.ColumnValue(Statement.ColumnName(7)) + "</td>";
+                    HTML += "<td>" + Statement.ColumnValue(Statement.ColumnName(18)) + "</td>";
+                    HTML += "<td style=\"text-align:right;\">" + planCurDay + "</td>";
+                    HTML += "<td style=\"text-align:right;\">" + format_number(Statement.ColumnValue(Statement.ColumnName(19)), 2) + "</td>";
+                    HTML += "<td style=\"text-align:right;" + ((implPercents >= 100) ? "color: green;\"" : " \"") + " >" + implPercents + "</td>";
+                    HTML += "<td style=\"text-align:right;\">" + ((curFact > 0) ? format_number(curFact, 2) : " ") + "</td>";
+                    HTML += "<td " + ((parseFloat(forecast) >= 100) ? "style=\"color: green; text-align:right;\"" : "style=\"color: red; text-align:right;\"") + " >" + forecast + "</td>";
+                    HTML += "</tr>";
+                }
+
+                nominalPlanSum += parseFloat(Statement.ColumnValue(Statement.ColumnName(14)));
+                factSum += parseFloat(Statement.ColumnValue(Statement.ColumnName(19)));
+                if (parseInt(Statement.ColumnValue(Statement.ColumnName(8))) != 1) {
+                    planSum += parseFloat(planCurDay);
+                } else {
+                    var a = String(planSum).split('.')[1];
+                    a = (typeof a === 'undefined') ? 0 : a;
+                    //var b = parseInt(String(planCurDay).split('.')[1]);
+                    var b = parseInt(String(parseFloat(planCurDay)).split('.')[1]);
+                    b = (typeof b === 'undefined' || isNaN(b)) ? 0 : b;
+                    planSum = Math.floor(planSum) + Math.floor(planCurDay) + '.' + (parseInt(a) + parseInt(b));
+                    //planSum = Math.floor(format_number(planCurDay,3));
+                }
+                prevObj = (Statement.ColumnValue(Statement.ColumnName(3)) != '1') ? Statement.ColumnValue(Statement.ColumnName(5)) : 'null';
+                prevUnits = (Statement.ColumnValue(Statement.ColumnName(3)) != '1') ? Statement.ColumnValue(Statement.ColumnName(18)) : 'null';
+                prevPeriod = getPeriod();
+            }
+            if (prevObj != 'null') {
+                HTML += getSumRow(trStyle, factSum, planSum, curFactSum, nominalPlanSum);
+            }
+            document.getElementById("tableBody").innerHTML += HTML;
+        }
+
+        function getSumRow(trStyle, factSum, planSum, curFact, nominalPlanSum) {
+            Statement.StepPrev();
+            var forecast = ((curFact > 0) ? format_number((curFact + parseFloat(factSum)) / planSum * 100, 2) : ' ');
+            var implPercents = format_number(factSum / planSum * 100, 2);
+            var nominalPlanValue = (planingSubject == CONSTS.merch ? format_number(Statement.ColumnValue(Statement.ColumnName(14)), 2) : format_number(nominalPlanSum, 2) );
+            if (parseInt(Statement.ColumnValue(Statement.ColumnName(8))) != 1) {
+                planSum = format_number(planSum, 2);
+            }
+            var html = trStyle;
+
+            if (isSummary) {
+                html += "<td colspan=\"3\" > Всього " + getPlanPeriodName() + "(" + nominalPlanValue + ")" + " - " + Statement.ColumnValue(Statement.ColumnName(7)) + "</td>";
+                html += "<td >" + Statement.ColumnValue(Statement.ColumnName(18)) + "</td>";
+                html += "<td style=\"text-align:right;\">" + planSum, 3 + "</td>";
+                html += "<td style=\"text-align:right;\">" + format_number(factSum, 2) + "</td>";
+                html += "<td style=\"text-align:right; " + ((implPercents >= 100) ? " color: green\"" : "\"") + " >" + implPercents + "</td>";
+                html += "<td style=\"text-align:right;\">" + ((curFact > 0) ? format_number(curFact, 2) : ' ') + "</td>";
+                html += "<td style=\"text-align:right " + ((parseFloat(forecast) >= 100) ? "; color: green" : "; color: red") + " \">" + forecast + "</td>";
+                html += "</tr>";
+            }
+            else{
+                html += "<td style=\"background-color: rgb(219,217,217);\" colspan=\"3\"><b>Всього " + getPlanPeriodName() + "(" + nominalPlanValue + ")" + " - " + Statement.ColumnValue(Statement.ColumnName(7)) + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217);\"><b>" + Statement.ColumnValue(Statement.ColumnName(18)) + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217); text-align:right;\"><b>" + planSum, 3 + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217); text-align:right;\"><b>" + format_number(factSum, 2) + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217); text-align:right; " + ((implPercents >= 100) ? " color: green\"" : "\"") + "><b>" + implPercents + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217); text-align:right;\"><b>" + ((curFact > 0) ? format_number(curFact, 2) : ' ') + "</b></td>";
+                html += "<td style=\"background-color: rgb(219,217,217); text-align:right; " + ((parseFloat(forecast) >= 100) ? "color: green" : "color: red") + " \"><b>" + forecast + "</b></td>";
+                html += "</tr>";
+            }
+            Statement.Step();
+            return html;
+        }
+
+        function DateValidate() {
+            inputStartDate = getDOMElementById("startDateTimePicker", document).value;
+            inputEndDate = getDOMElementById("endDateTimePicker", document).value;
+            var iStartDate = getDateFromString(inputStartDate);
+            var iEndDate = getDateFromString(inputEndDate);
+            if (iEndDate < iStartDate) {
+                inputEndDate = inputStartDate;
+            }
+
+        }
+
+        function getPeriod() {
+            var curPeriod = 'null';
+            if (String(Statement.ColumnValue(Statement.ColumnName(3))) == '3') {
+                curPeriod = String(Statement.ColumnValue(Statement.ColumnName(1)));
+            } else if (String(Statement.ColumnValue(Statement.ColumnName(3))) == '2') {
+                curPeriod = String(Statement.ColumnValue(Statement.ColumnName(2)));
+            }
+            return curPeriod;
+        }
+
+        function getPlanPeriodName() {
+            var name;
+            switch (parseInt(Statement.ColumnValue(Statement.ColumnName(3)), 10)) {
+                case 1:
+                    name = " ";
+                    break;
+                case 2:
+                    name = "T-" + (parseInt(Statement.ColumnValue(Statement.ColumnName(2)), 10) + 1);
+                    break;
+                case 3:
+                    name = monthNames[parseInt(Statement.ColumnValue(Statement.ColumnName(1)), 10) - 1];
+                    break
+            }
+            return name;
+        }
+
+        function getPlanByDays() {
+            var sql;
+            var locStat = null;
+            var res;
+            switch (parseInt(Statement.ColumnValue(Statement.ColumnName(3)), 10)) {
+                case 1:
+                    return Statement.ColumnValue(Statement.ColumnName(14));
+                case 2:
+                    sql =
+                        "SELECT cast(" + Statement.ColumnValue(Statement.ColumnName(14)) + " as float)/count(1) val FROM (WITH RECURSIVE " +
+                        "	dates(dt) as ( SELECT date('" + Statement.ColumnValue(Statement.ColumnName(0)) + "', 'localtime', '-7 day', 'weekday 0', '+1 day') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE julianday(dt,'localtime', 'start of day') < julianday('" + Statement.ColumnValue(Statement.ColumnName(0)) + "', 'localtime', 'start of day', 'weekday 0') ) " +
+                        "	SELECT dt date,strftime('%m', dt) month ,strftime('%W', dt) week FROM dates WHERE dt NOT IN (SELECT date(Holiday) FROM tblHolidays));";
+                    locStat = Connection.Prepare(sql);
+                    break;
+                case 3:
+                    sql =
+                        "SELECT cast(" + Statement.ColumnValue(Statement.ColumnName(14)) + " as float)/count(1) val FROM (WITH RECURSIVE " +
+                        "	dates(dt) as ( SELECT date('" + Statement.ColumnValue(Statement.ColumnName(0)) + "', 'start of month') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE julianday(dt,'localtime', 'start of day') < julianday('" + Statement.ColumnValue(Statement.ColumnName(0)) + "', 'start of month','localtime', 'start of day', '+1 month', '-1 day') ) " +
+                        "	SELECT dt date,strftime('%m', dt) month ,strftime('%W', dt) week FROM dates WHERE dt NOT IN (SELECT date(Holiday) FROM tblHolidays))";
+                    locStat = Connection.Prepare(sql);
+                    break;
+            }
+
+            locStat.Step();
+            res = parseFloat(locStat.ColumnValue(locStat.ColumnName(0)));
+            if (parseInt(Statement.ColumnValue(Statement.ColumnName(8))) == 1) {
+                res = parseFloat(Math.floor(res) + '.' + Math.round(res % 1 * parseFloat(Statement.ColumnValue(Statement.ColumnName(6)))));
+            }
+            if (planingSubject == CONSTS.outlet) {
+                switch (parseInt(Statement.ColumnValue(Statement.ColumnName(3)), 10)) {
+                    case 1:
+                        return Statement.ColumnValue(Statement.ColumnName(14));
+                    case 2:
+                        sql =
+                            "WITH RECURSIVE dates (dt) AS ( SELECT date('" + inputStartDate + "') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE date(dt) < date('" + inputEndDate + "')) SELECT dt date, strftime('%m', dt) month, strftime('%W', dt) week, " + res + " * count(1) value FROM dates WHERE dt NOT IN ( SELECT date(Holiday) FROM tblHolidays ) AND week = '" + Statement.ColumnValue(Statement.ColumnName(2)) + "'";
+                        locStat = Connection.Prepare(sql);
+                        break;
+                    case 3:
+                        sql =
+                            "WITH RECURSIVE dates (dt) AS ( SELECT date('" + inputStartDate + "') UNION ALL SELECT date(dt, '+1 day') FROM dates WHERE date(dt) < date('" + inputEndDate + "')) SELECT dt date, strftime('%m', dt) month, strftime('%W', dt) week, " + res + " * count(1) value FROM dates WHERE dt NOT IN ( SELECT date(Holiday) FROM tblHolidays ) AND month = '" + Statement.ColumnValue(Statement.ColumnName(1)) + "'";
+                        locStat = Connection.Prepare(sql);
+                        break;
+                }
+                locStat.Step();
+                res = locStat.ColumnValue(locStat.ColumnName(3));
+            }
+            locStat.Close();
+            return res;
+        }
+
+        function getCheckedRadioButtonValue(radioGroupName) {
+            var radios = document.getElementsByName(radioGroupName);
+            var radio_value = '-1';
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    radio_value = radios[i].value;
+                }
+            }
+
+            return radio_value;
+        }
+
+
+        function chSubj() {
+            planingSubject = getCheckedRadioButtonValue('subjectGroup');
+            recalcPeriod();
+        }
+
+        function chPer() {
+            planingPeriod = getCheckedRadioButtonValue('periodGroup');
+            if (planingPeriod == CONSTS.day) {
+                document.getElementById("isSummary").checked = false;
+            }
+        }
+
+        function readInput() {
+            planingPeriod = getCheckedRadioButtonValue('periodGroup');
+            planingSubject = getCheckedRadioButtonValue('subjectGroup');
+
+            planingSubject = planingSubject == '' ? -1 : planingSubject;
+            if (document.getElementById('order').checked) {
+                type = CONSTS.ordering;
+            } else if (document.getElementById('sales').checked) {
+                type = CONSTS.sales;
+            }
+            isSummary = document.getElementById('filled-in-box').checked
+            document.getElementById("button").disabled = planingSubject == -1;
+        }
+
+        function DateValidate() {
+            inputStartDate = document.getElementById("startDateTimePicker", document).value;
+            inputEndDate = document.getElementById("endDateTimePicker", document).value;
+
+            var iStartDate = getDateFromString(inputStartDate);
+            var iEndDate = getDateFromString(inputEndDate);
+            if (iEndDate < iStartDate) {
+                inputEndDate = inputStartDate;
+                document.getElementById("startDateTimePicker").value = inputStartDate;
+                document.getElementById("endDateTimePicker").value = inputEndDate;
+            }
+            recalcSubject();
+            recalcPeriod();
+        }
+
+        function IsAndroidVerKitKatOrMore() {
+            var androidversion = 0.0;
+            var ua = navigator.userAgent;
+            if (ua.indexOf("Android") >= 0) {
+                androidversion = parseFloat(ua.slice(ua.indexOf("Android") + 8));
+            }
+            return (androidversion >= 4.4);
+        }
+
+        function Show() {
+            DateValidate();
+
+
+            if (planingSubject == -1) {
+                document.getElementById("button").disabled = true;
+            } else {
+                document.getElementById("myBody").style.display = 'none';
+                $("#loading-div-background").show("slow", "swing", function () {
+                    $('#genTime')[0].innerHTML = $('#genTime')[0].innerHTML.replace("[date]",formatDate(currDate));
+                    readInput();
+                    document.getElementById("table").style.display = 'block';
+                    getTableBody();
+                    if (IsAndroidVerKitKatOrMore()) {
+                        $('#myTable').fixedHeaderTable({footer: false, cloneHeadToFoot: false, themeClass: 'datagrid'});
+                    }
+                    $('#rHeader')[0].innerHTML = $('#rHeader')[0].innerHTML.replace("[type]", (type == CONSTS.ordering ? "замовленням" : "продажам" )).replace("[from]", inputStartDate).replace("[to]", inputEndDate);
+                    $('#date')[0].innerHTML = ((planingSubject == CONSTS.merch) ? "Дата" : "ТТ");
+                    $("#loading-div-background").hide();
+                });
+            }
+        }
+
+
+        function prepareDate(s) {
+            var dt = new Date(s);
+            var resStr = dt.getFullYear();
+            if ((new String(dt.getMonth() + 1)).length < 2) {
+                resStr += "-0" + (dt.getMonth() + 1);
+            } else {
+                resStr += "-" + (dt.getMonth() + 1);
+            }
+            if ((new String(dt.getDate())).length < 2) {
+                resStr += "-0" + dt.getDate();
+            } else {
+                resStr += "-" + dt.getDate();
+            }
+            return resStr;
+        }
+
+        function createFirstScreen() {
+
+            getDOMElementById("startDateTimePicker", document).value = prepareDate(currDate);
+            getDOMElementById("endDateTimePicker", document).value = prepareDate(currDate);
+
+            document.getElementById("startDateTimePicker").value = prepareDate(startOfMonth);
+            document.getElementById("endDateTimePicker").value = prepareDate(currDate);
+
+            ttRadioButton = document.getElementById("TT");
+            tpRadioButton = document.getElementById("TP");
+
+            allRadioButton = document.getElementById('All');
+            dayRadioButton = document.getElementById('Day');
+            weekRadioButton = document.getElementById('Week');
+            monthRadioButton = document.getElementById('Month');
+
+            allDivElement = document.getElementById('AllDiv');
+            dayDivElement = document.getElementById('DayDiv');
+            weekDivElement = document.getElementById('WeekDiv');
+            monthDivElement = document.getElementById('MonthDiv');
+
+            DateValidate();
+            recalcSubject();
+            recalcPeriod();
+            $("#loading-div-background").hide();
+            $("#loading-div-background").css({opacity: 1.0});
+
+            if (getCheckedRadioButtonValue('periodGroup') == -1
+                || getCheckedRadioButtonValue('subjectGroup') == -1) {
+                document.getElementById("myBody").innerHTML = "<h1 style='color:red;'>Генерація звіту неможлива у звязку з відсутністю необхідних данних</h1>";
+            }
+        }
+    </script>
+</head>
+<div><input type="button" onclick="location.href =&quot;AuditsSummary_r.html?date=2018-01-30&quot;" value="Назад"
+            class="button"></div><h1>Отчет по расхождению показателей в разрезе объектов учета</h1>
+<table>
+    <tbody>
+    <tr>
+        <td><label class="custom-select"><select id="hideSelect" onchange="selectDetail()" style="font-size=2em;">
+            <option value="a" selected="">Анкета</option>
+            <option value="d">Остаток</option>
+            <option value="f">Фэйсинги</option>
+            <option value="p">Цены</option>
+        </select></label></td>
+        <td style="padding-left:10px; padding-right:5px; text-align:justify;">2017 Дневной отчет самообслуживание SPT в
+            ООО ТД Константин (ТД Константин), Agent 01PF (Семененко Евгений) 12-12-2017 TTC_Test_5уровень&nbsp;
+            30-01-2018
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table style="table-layout:auto;" class="custom">
+    <tbody>
+    <tr>
+        <th>Объекты</th>
+        <th>Показатели</th>
+        <th>Результат ТП</th>
+        <th>Результат СВ</th>
+        <th>Корректность</th>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="1">MR</td>
+        <td>На полке есть и виден весь обязательный ассортимент (MR) 30 позиций</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="16">Ассортимент</td>
+        <td>Perfect Fit сухой для собак</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Cesar</td>
+        <td>8</td>
+        <td>8</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Dreamies</td>
+        <td>11</td>
+        <td>11</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Kitekat пауч</td>
+        <td>8</td>
+        <td>8</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Kitekat сухой</td>
+        <td>9</td>
+        <td>9</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Pedigree лакомства</td>
+        <td>9</td>
+        <td>9</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Pedigree пауч</td>
+        <td>10</td>
+        <td>10</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Pedigree сухой</td>
+        <td>7</td>
+        <td>7</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Perfect Fit пауч для кошек</td>
+        <td>6</td>
+        <td>6</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Perfect Fit сухой для кошек</td>
+        <td>16</td>
+        <td>16</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Sheba</td>
+        <td>21</td>
+        <td>21</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Whiskas пауч</td>
+        <td>34</td>
+        <td>34</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Whiskas сухой</td>
+        <td>14</td>
+        <td>14</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите максимальную цену на Sheba пауч</td>
+        <td>26.0</td>
+        <td>26.0</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите максимальную цену на продукты Kitekat пауч</td>
+        <td>12.0</td>
+        <td>12.0</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите максимальную цену на продукты Whiskas пауч</td>
+        <td>17.5</td>
+        <td>17.5</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="4">Категория</td>
+        <td>В случае расположения брендов в точке по ценовым сегментам, Whiskas расположен раньше Felix по ходу движения
+            покупателей
+        </td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Выкладка Mars соответствует категорийному делению в магазине (по производителям, кошки/собаки, ценовые
+            сегменты и сухой/влажный)
+        </td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Длина линейной выкладки брендов Mars (в метрах) без учета наполнителей, находящихся на полках
+            (однопорционные корма для кошек и собак считаются по количеству слоев, а все остальное - по одному слою вне
+            зависимости от их количества)
+        </td>
+        <td>16.0</td>
+        <td>16.0</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Категория располагается вне тупика и находится дальше 1 м от входа/выхода</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="5">Лакомства</td>
+        <td>Все лакомства для кошек в магазине объединены в одну неразрывную секцию с представленностью Марс единым
+            блоком в центре
+        </td>
+        <td></td>
+        <td>Да</td>
+        <td>0.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Кол-во навесок/стоек Dreamies</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Кол-во навесок/стоек Pedigree Dentastix</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Dreamies в радиусе 1 метра от места расчета</td>
+        <td>4</td>
+        <td>4</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите кол-во линий Pedigree DentaStix в радиусе 1 метра от места расчета</td>
+        <td>5</td>
+        <td>5</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="3">Принципы планограммы SPT</td>
+        <td>Все паучи расположены на высоте 1.1-1.7 м от уровня пола</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Все продукты выложены неразрывными вертикальными бренд блоками, форма которых стремится к прямоугольной с
+            мин шириной 20 см на каждой полке
+        </td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Сухой и влажный ассортимент для котят/щенков сгруппирован на соседних полках и расположен внутри
+            соответствующих бренд блоков
+        </td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="2">Промо</td>
+        <td>Оформление промо 2 в торговой точке соответствует рекомендациям в периодном брифе</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите бренд, на который проходит промо 2</td>
+        <td>Sheba pouch</td>
+        <td>Sheba pouch</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="3">Промо 1</td>
+        <td>Выберите механику промо 1 из списка</td>
+        <td>Временное снижение цены</td>
+        <td>Временное снижение цены</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Оформление промо 1 в торговой точке соответствует рекомендациям в периодном брифе</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Укажите бренд, на который проходит промо 1</td>
+        <td>Cesar pouch</td>
+        <td>Perfect Fit pouch;Cesar pouch</td>
+        <td>0.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td rowspan="7">Тактические записи</td>
+        <td>POSM Nature's Table Cухой. Отметить "ДА" при наличии единицы оборудования в ТТ</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>POSM WHISKAS® Новогодний пауч. Отметить "ДА" при наличии единицы оборудования в ТТ</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Запуск Sheba Мини пауч. Укажите количество уникальных SKU новинки. (от 1 до 4 SKU)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Запуск Whiskas® Новогодний пауч. Укажите количество уникальных SKU новинки. (1 SKU)</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Запуск нового бренда Nature's Table Влажный. Укажите количество уникальных SKU новинки. (от 1 до 4 SKU)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Запуск нового бренда Nature's Table Сухой. Укажите количество уникальных SKU новинки. (от 1 до 2 SKU)</td>
+        <td>2</td>
+        <td>2</td>
+        <td>100.00%</td>
+    </tr>
+    <tr class="rowA">
+        <td>Обучение "Новинки Sheba 2017"</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100.00%</td>
+    </tr>
+    </tbody>
+</table><br>

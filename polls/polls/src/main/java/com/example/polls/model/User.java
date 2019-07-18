@@ -44,6 +44,12 @@ public class User extends DateAudit {
     @Size(max = 100)
     private String password;
 
+    @Column(name = "is_active", nullable = false)
+    private Boolean active;
+
+    @Column(name = "is_email_verified", nullable = false)
+    private Boolean isEmailVerified;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -54,11 +60,17 @@ public class User extends DateAudit {
 
     }
 
-    public User(String name, String username, String email, String password) {
+    public User(String name, String username, String email, String password, Boolean active, Boolean isEmailVerified) {
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
+        this.active = active;
+        this.isEmailVerified = isEmailVerified;
+    }
+
+    public void markVerificationConfirmed() {
+        setEmailVerified(true);
     }
 
     public Long getId() {
@@ -107,5 +119,21 @@ public class User extends DateAudit {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
+    public Boolean getEmailVerified() {
+        return isEmailVerified;
+    }
+
+    public void setEmailVerified(Boolean emailVerified) {
+        isEmailVerified = emailVerified;
     }
 }

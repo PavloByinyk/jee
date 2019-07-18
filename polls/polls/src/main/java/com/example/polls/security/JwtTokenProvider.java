@@ -1,5 +1,7 @@
 package com.example.polls.security;
 
+import com.example.polls.exception.InvalidTokenRequestException;
+import com.example.polls.payload.JwtAuthenticationResponse;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,19 +22,19 @@ public class JwtTokenProvider {
     @Value("${app.jwtExpirationInMs}")
     private int jwtExpirationInMs;
 
-    public String generateToken(Authentication authentication) {
+    public JwtAuthenticationResponse generateToken(Authentication authentication) {
 
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
 
         Date now = new Date();
-        Date expiryDate = new Date(now.getTime() + jwtExpirationInMs);
+        Date expiryDate = new Date(now.getTime() + 10000);
 
-        return Jwts.builder()
+        return new JwtAuthenticationResponse(Jwts.builder()
                 .setSubject(Long.toString(userPrincipal.getId()))
                 .setIssuedAt(new Date())
                 .setExpiration(expiryDate)
                 .signWith(SignatureAlgorithm.HS512, jwtSecret)
-                .compact();
+                .compact(), expiryDate.getTime());
     }
 
     public Long getUserIdFromJWT(String token) {
@@ -54,6 +56,7 @@ public class JwtTokenProvider {
             logger.error("Invalid JWT token");
         } catch (ExpiredJwtException ex) {
             logger.error("Expired JWT token");
+            throw new InvalidTokenRequestException("JWT", authToken, "Token expired. Refresh required");
         } catch (UnsupportedJwtException ex) {
             logger.error("Unsupported JWT token");
         } catch (IllegalArgumentException ex) {

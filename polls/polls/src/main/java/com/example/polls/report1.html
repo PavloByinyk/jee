@@ -1,0 +1,338 @@
+﻿﻿<style>
+    html {
+        font-family: sans-serif;
+    }
+
+    .m-table tr td{
+        height: 40px;
+    }
+
+    .regular-checkbox {
+        width: 30px;
+        height: 30px;
+         -webkit-appearance: none;
+        background-color: #F8F8F8;
+        border: 1px solid #414242;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.13);
+        padding: 9px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+    }
+    .regular-checkbox:active, .regular-checkbox:checked:active {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .regular-checkbox:checked {
+        background-color: #DEE1E4;
+        border: 1px solid #39393A;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #99A1A7;
+    }
+    .regular-checkbox:checked:after {
+        content: '\2714';
+        font-size: 26px;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: #0A141B;
+    }
+
+    /* Button*/
+    .button {
+         -moz-box-shadow:inset 0px 1px 0px 0px #e8e8e8;
+         -webkit-box-shadow:inset 0px 1px 0px 0px #e8e8e8;
+        box-shadow:inset 0px 1px 0px 0px #e8e8e8;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c9c9c9), color-stop(1, #bababa) );
+        background:-moz-linear-gradient( center top, #c9c9c9 5%, #bababa 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9', endColorstr='#bababa');
+        background-color:#c9c9c9;
+         -moz-border-radius:6px;
+         -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:1px 1px 0px #dbdbdb;
+    }
+    .button:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bababa), color-stop(1, #c9c9c9) );
+        background-image: -moz-linear-gradient(center top, #bababa 5%, #c9c9c9 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bababa', endColorstr='#c9c9c9');
+        background-color:#bababa;
+    }
+    .button:active {
+        position:relative;
+        top:1px;
+    }
+</style>
+<html>
+<meta content="text/html; charset=utf-8" />
+<head>
+    <script type="text/javascript" src="../dblink.js"></script>
+    <script language="JavaScript">
+        var Statement = null;
+        var currDate = new Date();
+        var inputStartDate;
+        var isAndroid = false;
+
+        var orderDateWhereCondition = '';
+
+        var tableOpen = "<table border='1'>";
+        var tableClose = "</table>";
+
+        var trOpen = "<tr>";
+        var trClose = "</tr>";
+
+        var thOpen = "<th align='center'><font size='1'><div>";
+        var thClose = "</div></font></th>";
+
+        var tdOpen = "<td><font size='1'><div>";
+        //var tdOpenCenter = "<td align='center'><font size='1'><div>";
+        var tdClose = "</div></font></td>";
+
+        var tdOpenS = "<td><div>";
+        var tdCloseS = "</div></td>";
+
+
+
+
+        function CloseStatement() {
+            Statement.Close();
+        }
+
+        function PrepareStatement(Sql) {
+            Statement = Connection.Prepare(Sql);
+        }
+
+        //function ResetStatement() {
+        //Statement.Reset();
+        //}
+
+        function isDefined(type) {
+            return type != 'undefined' && type != 'unknown';
+        }
+
+        function getDOMElementById(id, doc) {
+            if (!isDefined(doc)) {
+                doc = document;
+            }
+            if (isDefined(typeof doc.getElementById)) {
+                return doc.getElementById(id);
+            } else
+            if (isDefined(typeof document.all)) {
+                return doc.all[id];
+            } else {
+                throw new Error("Can not find a method to locate DOM element.");
+                return null;
+            }
+        }
+
+
+
+
+
+        function prepareDate(s) {
+            var dt = new Date(s);
+            var resStr = dt.getFullYear();
+            if((new String(dt.getMonth()+1)).length < 2) {
+                resStr += "-0" + (dt.getMonth()+1);
+            } else {
+                resStr += "-" + (dt.getMonth()+1);
+            }
+            if((new String(dt.getDate())).length < 2) {
+                resStr += "-0" + dt.getDate();
+            } else {
+                resStr += "-" + dt.getDate();
+            }
+            return resStr;
+        }
+
+
+        function getFirstHeader() {
+            var result = '';
+
+            result = tableOpen;
+            result += trOpen;
+
+            result += thOpen + "ТТ" + thClose;
+            result += thOpen + "Адрес" + thClose;
+            result += thOpen + "Дата заказа" + thClose;
+            result += thOpen + "Дата накладной" + thClose;
+            result += thOpen + "№ накладной" + thClose;
+            result += thOpen + "Заказ, сумма с НДС" + thClose;
+            result += thOpen + "Продажа, сумма с НДС" + thClose;
+            result += thOpen + "Разница, сумма с НДС" + thClose;
+            result += thOpen + "Полнота выполнения заказа, % сумма с НДС" + thClose;
+            result += thOpen + "Полнота выполнения заказа, % шт" + thClose;
+
+            result += trClose;
+            return result;
+        }
+
+        function getFirstTable() {
+            var result = "";
+            // var RowCount = Statement.RowCount;
+            var ColumnsCount = 9;
+            // var summary = new Array(RowCount);
+            var summary = new Array(0);
+            //var bbb = 0;
+
+            result += getFirstHeader();
+
+            // if (RowCount == 0) {
+            if (true) {
+
+                result += trOpen;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += tdOpen + "Данных нет" + tdClose;
+                result += trClose;
+
+                //return result;
+            } else {
+
+
+
+                try {
+                    for (i = 0; i < RowCount; i++) {
+                        Statement.Step();
+                        summary[i] = new Array(ColumnsCount);
+                        for (j = 0; j <= ColumnsCount; j++) {
+                            summary[i][j] = Statement.ColumnValue(Statement.ColumnName(j));
+                        }
+                    }
+                } catch(e) {alert("Готово!" + e.stack); }
+
+
+
+                for (i = 0; i < RowCount; i++) {
+                    result += trOpen;
+                    result += tdOpen + summary[i][0] + tdClose;
+                    result += tdOpen + summary[i][1] + tdClose;
+                    result += tdOpen + summary[i][2] + tdClose;
+                    result += tdOpen + summary[i][3] + tdClose;
+                    result += tdOpen + summary[i][4] + tdClose;
+                    result += tdOpen + summary[i][5] + tdClose;
+                    result += tdOpen + summary[i][6] + tdClose;
+                    result += tdOpen + summary[i][7] + tdClose;
+                    result += tdOpen + summary[i][8] + tdClose;
+                    result += tdOpen + summary[i][9] + tdClose;
+                    result += trClose;
+                }
+            }
+
+            return result;
+
+        }
+
+
+
+        function Show() {
+            // DateValidate();
+
+            var HTML = "";
+            HTML += "<small>" + prepareDate(currDate) + " " + currDate.toLocaleTimeString() + "</small>" + "<br/>";
+            HTML += "<center><font size=\"5\"><b>Отчет по выполнению заказов</b></font></center>";
+            HTML += "<br/><small>На дату: " + inputStartDate + "</small><br/>";
+
+
+
+            First table section
+            PrepareStatement("SELECT "+
+                "OO.OLName AS Col1, "+
+                "CASE WHEN OO.OLDeliveryAddress = '-' THEN OO.OLAddress ELSE OO.OLDeliveryAddress END AS Col2, "+
+                "strftime('%d.%m.%Y',OOH.OlOrderDate) as Col3, "+
+                "IFNULL(strftime('%d.%m.%Y',SOH.Date),'-') as Col4, "+
+                "IFNULL(SOH.Invoice_No,'-') as Col5, "+
+                "CAST(OOH.OlOrderAmount as INT) as Col6, "+
+                "IFNULL(CAST(SOH.TotalSum as INT),0) as Col7, "+
+                "IFNULL(CAST((SOH.TotalSum - OOH.OlOrderAmount) as INT),0) as Col8, "+
+                "printf('%.2f',(SOH.TotalSum/OOH.OlOrderAmount*100)) as Col9, "+
+                "printf('%.2f',(SOD.Product_qty/OOD.Product_qty*100)) as Col10 "+
+                "FROM tblOutletOrderH OOH "+
+                "LEFT JOIN tblOutletCardH OCH ON OCH.OlCard_ID = OOH.OlCard_ID "+
+                "LEFT JOIN tblSalOutH SOH on SOH.OrderNo = OOH.OrderNo AND SOH.Status = 2 "+
+                "LEFT JOIN tblOutlets OO ON OO.OL_ID = OCH.Ol_Id "+
+                "LEFT JOIN "+
+                "(SELECT Invoice_id, SUM(Product_qty) as Product_qty FROM tblSalOutD GROUP BY Invoice_id) SOD ON SOD.Invoice_id = SOH.Invoice_id "+
+                "LEFT JOIN "+
+                "(SELECT OrderNo, SUM(Product_qty) as Product_qty FROM tblOutletOrderD GROUP BY OrderNo) OOD ON OOD.OrderNo = OOH.OrderNo "+
+                "WHERE " + orderDateWhereCondition +
+                "ORDER BY OOH.OrderNo");
+            HTML += getFirstTable();
+            // CloseStatement();
+            // End of First table section
+
+            HTML += tableClose;
+
+            // End of Footer
+            getDOMElementById("myBody", document).innerHTML = HTML;
+        }
+
+        // function DateValidate() {
+        //
+        //     //if(isAndroid) {
+        //     //inputStartDate = getDOMElementById("startDateTimePicker", document).value;
+        //     //} else {
+        //     inputStartDate = prepareDate(getDOMElementById("startDateTimePicker", document).value);
+        //     //}
+        //
+        //     orderDateWhereCondition = " DATE(OOH.OlOrderDate) BETWEEN DATE('" + inputStartDate + "') AND DATE('" + inputStartDate + "') ";
+        // }
+        //
+        // function setBeginDate(timeInMillis) {
+        //     var date = new Date (timeInMillis);
+        //     getDOMElementById("startDateTimePicker", document).value = prepareDate(date);
+        // }
+        //
+        //
+        //
+        // function callBeginDatepicker() {
+        //     DateTimePicker.ShowDateTimePicker('setBeginDate', getDOMElementById("startDateTimePicker", document).value);
+        // }
+        // function createFirstScreen() {
+        //     var HTML = "";
+        //     var tableZeroBorderOpen = "<table border='0'>";
+        //     if(navigator.appVersion.indexOf("Android")!=-1) {
+        //         isAndroid = true;
+        //         HTML += tableZeroBorderOpen;
+        //         HTML += trOpen;
+        //         HTML += tdOpenS + "Дата:" + tdCloseS;
+        //         HTML += tdOpenS + "<input type='button' id='startDateTimePicker' onclick='callBeginDatepicker()' class='button'>" + tdCloseS;
+        //         HTML += trClose;
+        //         HTML += tableClose;
+        //         HTML += "<br/>";
+        //         HTML += "<input type='button' value='Генерировать' onClick='Show()' class='button'>";
+        //     } else {
+        //         HTML += tableZeroBorderOpen;
+        //         HTML += trOpen;
+        //         HTML += "<td><font size='2'>Дата:</font></td>";
+        //         //************************************************************************************
+        //         HTML += "<td><input type='button' id='startDateTimePicker' onclick='callBeginDatepicker()' class='button'></td>";
+        //         //************************************************************************************
+        //         HTML += trClose;
+        //         HTML += tableClose;
+        //         HTML += "<input type='button' value='Генерировать' onClick='Show()'>";
+        //     }
+        //     getDOMElementById("myBody", document).innerHTML = HTML;
+        //     getDOMElementById("startDateTimePicker", document).value = prepareDate(currDate);
+        // }
+    </script>
+
+</head>
+<body id="myBody" onLoad="Show()">
+</body>
+</html>

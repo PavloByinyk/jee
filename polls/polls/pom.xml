@@ -54,6 +54,12 @@
 			<version>0.9.0</version>
 		</dependency>
 
+		<!-- For Working with Mails -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
 		<!-- For Java 8 Date/Time Support -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>

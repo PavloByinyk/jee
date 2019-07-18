@@ -2,10 +2,20 @@ package com.example.polls.payload;
 
 public class JwtAuthenticationResponse {
     private String accessToken;
+    private long expTime;
     private String tokenType = "Bearer";
 
-    public JwtAuthenticationResponse(String accessToken) {
+    public JwtAuthenticationResponse(String accessToken, long expTime) {
         this.accessToken = accessToken;
+        this.expTime = expTime;
+    }
+
+    public long getExpTime() {
+        return expTime;
+    }
+
+    public void setExpTime(long expTime) {
+        this.expTime = expTime;
     }
 
     public String getAccessToken() {
