@@ -1,16 +1,20 @@
 package com.example.polls.service;
 
+import com.example.polls.exception.PasswordResetLinkException;
 import com.example.polls.exception.ResourceAlreadyInUseException;
 import com.example.polls.exception.ResourceNotFoundException;
 import com.example.polls.model.User;
 import com.example.polls.model.token.ConfirmationToken;
 import com.example.polls.model.token.TokenStatus;
+import com.example.polls.model.token.TokenType;
+import com.example.polls.payload.PasswordResetLinkRequest;
 import com.example.polls.payload.SignUpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.Email;
 import java.util.Optional;
 
 @Service
@@ -67,4 +71,15 @@ public class AuthService {
     }
 
 
+    public Optional<ConfirmationToken> generatePasswordResetToken(PasswordResetLinkRequest passwordResetLinkRequest) {
+        String email = passwordResetLinkRequest.getEmail();
+
+        return userService.findByEmail(email)
+                .map(user -> {
+                    ConfirmationToken passwordResetToken = confirmationTokenService.createNewConfirmationToken(user, TokenType.TYPE_CONFIRM_PASSWORD);
+                    confirmationTokenService.save(passwordResetToken);
+                    return Optional.of(passwordResetToken);
+                })
+                .orElseThrow( () -> new PasswordResetLinkException(email, "No matching user found for the given request"));
+    }
 }

@@ -3,6 +3,7 @@ package com.example.polls.event.listener;
 import com.example.polls.event.OnUserRegistrationCompleteEvent;
 import com.example.polls.model.User;
 import com.example.polls.model.token.ConfirmationToken;
+import com.example.polls.model.token.TokenType;
 import com.example.polls.service.ConfirmationTokenService;
 import com.example.polls.service.EmailSenderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class OnUserRegistrationCompleteListener implements ApplicationListener<O
     private void sendEmailVerification(OnUserRegistrationCompleteEvent event){
 
         User user = event.getUser();
-        ConfirmationToken confirmationToken = confirmationTokenService.createNewConfirmationToken(user);
+        ConfirmationToken confirmationToken = confirmationTokenService.createNewConfirmationToken(user, TokenType.TYPE_CONFIRM_EMAIL);
         confirmationTokenService.save(confirmationToken);
 
         String recipientAddress = user.getEmail();

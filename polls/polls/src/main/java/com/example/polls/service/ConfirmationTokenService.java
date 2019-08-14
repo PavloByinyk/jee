@@ -3,6 +3,7 @@ package com.example.polls.service;
 import com.example.polls.exception.InvalidTokenRequestException;
 import com.example.polls.model.User;
 import com.example.polls.model.token.ConfirmationToken;
+import com.example.polls.model.token.TokenType;
 import com.example.polls.repository.ConfirmationTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,8 +31,8 @@ public class ConfirmationTokenService {
     }
 
 
-    public ConfirmationToken createNewConfirmationToken(User user){
-        return new ConfirmationToken(user);
+    public ConfirmationToken createNewConfirmationToken(User user, TokenType tokenType){
+        return new ConfirmationToken(user, tokenType);
     }
 
 

@@ -19,7 +19,7 @@ public class JwtTokenProvider {
     @Value("${app.jwtSecret}")
     private String jwtSecret;
 
-    @Value("${app.jwtExpirationInMs}")
+    @Value("1000000")
     private int jwtExpirationInMs;
 
     public JwtAuthenticationResponse generateToken(Authentication authentication) {
@@ -27,7 +27,7 @@ public class JwtTokenProvider {
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
 
         Date now = new Date();
-        Date expiryDate = new Date(now.getTime() + 10000);
+        Date expiryDate = new Date(now.getTime() + jwtExpirationInMs);
 
         return new JwtAuthenticationResponse(Jwts.builder()
                 .setSubject(Long.toString(userPrincipal.getId()))

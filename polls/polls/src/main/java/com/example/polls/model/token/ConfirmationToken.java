@@ -29,14 +29,19 @@ public class ConfirmationToken {
     @Enumerated(EnumType.STRING)
     private TokenStatus tokenStatus;
 
+    @Column(name = "token_type")
+    @Enumerated(EnumType.STRING)
+    private TokenType tokenType;
+
     public ConfirmationToken() {
     }
 
-    public ConfirmationToken(User user) {
+    public ConfirmationToken(User user, TokenType tokenType) {
         this.user = user;
         this.createdDate = Instant.now();
         this.confirmationToken = UUID.randomUUID().toString();
         this.tokenStatus = TokenStatus.STATUS_PENDING;
+        this.tokenType = tokenType;
     }
 
     public void setConfirmedStatus() {
@@ -81,5 +86,13 @@ public class ConfirmationToken {
 
     public void setTokenStatus(TokenStatus tokenStatus) {
         this.tokenStatus = tokenStatus;
+    }
+
+    public TokenType getTokenType() {
+        return tokenType;
+    }
+
+    public void setTokenType(TokenType tokenType) {
+        this.tokenType = tokenType;
     }
 }

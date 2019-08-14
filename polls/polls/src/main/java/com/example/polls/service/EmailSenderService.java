@@ -31,6 +31,15 @@ public class EmailSenderService {
         send(mailMessage);
     }
 
+    public void sendResetLink(String emailVerificationUrl, String to) {
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setTo(to);
+        mailMessage.setSubject("Password Reset Link [Team CEP]");
+        mailMessage.setFrom("chand312902@gmail.com");
+        mailMessage.setText("To confirm you want to change your password, please click here : " + emailVerificationUrl);
+        send(mailMessage);
+    }
+
     private void send(SimpleMailMessage simpleMailMessage){
         javaMailSender.send(simpleMailMessage);
     }

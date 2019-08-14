@@ -1,12 +1,11 @@
 package com.example.polls.controller;
 
+import com.example.polls.event.OnGenerateResetLinkEvent;
 import com.example.polls.event.OnUserRegistrationCompleteEvent;
 import com.example.polls.exception.InvalidTokenRequestException;
+import com.example.polls.exception.PasswordResetLinkException;
 import com.example.polls.exception.UserRegistrationException;
-import com.example.polls.payload.ApiResponse;
-import com.example.polls.payload.JwtAuthenticationResponse;
-import com.example.polls.payload.LoginRequest;
-import com.example.polls.payload.SignUpRequest;
+import com.example.polls.payload.*;
 import com.example.polls.security.JwtTokenProvider;
 import com.example.polls.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -77,4 +76,39 @@ public class AuthController {
                 .map(user -> ResponseEntity.ok(new ApiResponse(true, "User verified successfully")))
                 .orElseThrow(() -> new InvalidTokenRequestException("Email Verification Token", token, "Failed to confirm. Please generate a new email verification request"));
     }
+
+    @PostMapping("/password/resetlink")
+    public ResponseEntity resetLink(@Valid @RequestBody PasswordResetLinkRequest passwordResetLinkRequest) {
+
+        return authService.generatePasswordResetToken(passwordResetLinkRequest)
+                .map(passwordResetToken -> {
+                    UriComponentsBuilder urlBuilder = ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/auth/password/reset");
+                    OnGenerateResetLinkEvent generateResetLinkMailEvent = new OnGenerateResetLinkEvent(passwordResetToken, urlBuilder);
+                    applicationEventPublisher.publishEvent(generateResetLinkMailEvent);
+                    return ResponseEntity.ok(new ApiResponse(true, "Password reset link sent successfully"));
+                })
+                .orElseThrow(() -> new PasswordResetLinkException(passwordResetLinkRequest.getEmail(), "Couldn't create a valid token"));
+    }
+
+    /**
+     * Receives a new passwordResetRequest and sends the acknowledgement after
+     * changing the password to the user's mail through the event.
+     */
+
+//    @PostMapping("/password/reset")
+//    @ApiOperation(value = "Reset the password after verification and publish an event to send the acknowledgement " +
+//            "email")
+//    public ResponseEntity resetPassword(@ApiParam(value = "The PasswordResetRequest payload") @Valid @RequestBody PasswordResetRequest passwordResetRequest) {
+//
+//        return authService.resetPassword(passwordResetRequest)
+//                .map(changedUser -> {
+//                    OnUserAccountChangeEvent onPasswordChangeEvent = new OnUserAccountChangeEvent(changedUser, "Reset Password",
+//                            "Changed Successfully");
+//                    applicationEventPublisher.publishEvent(onPasswordChangeEvent);
+//                    return ResponseEntity.ok(new ApiResponse(true, "Password changed successfully"));
+//                })
+//                .orElseThrow(() -> new PasswordResetException(passwordResetRequest.getToken(), "Error in resetting password"));
+//    }
+
+
 }
