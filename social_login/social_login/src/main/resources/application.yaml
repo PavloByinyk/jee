@@ -1,8 +1,10 @@
+server:
+  port: 9090
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/spring_social?useSSL=false
     username: root
-    password: callicoder
+    password: root
 
   jpa:
     show-sql: true
