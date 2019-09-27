@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 9091
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/spring_social?useSSL=false
@@ -19,8 +19,8 @@ spring:
       client:
         registration:
           google:
-            clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
-            clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+            clientId: 165898358202-pme09tip3531hhg3ibeq7fkmgfdk5mvc.apps.googleusercontent.com
+            clientSecret: L1mCtk7yy4nMzgqXnlfa8hiA
             redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
             scope:
               - email
