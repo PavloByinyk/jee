@@ -40,8 +40,7 @@ public class GoogleApplication {
 
     @Configuration
     @EnableResourceServer
-    protected static class ResourceServerConfiguration
-            extends ResourceServerConfigurerAdapter {
+    protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
         @Override
         public void configure(HttpSecurity http) throws Exception {
             http

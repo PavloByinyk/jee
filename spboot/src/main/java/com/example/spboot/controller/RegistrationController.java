@@ -3,7 +3,6 @@ package com.example.spboot.controller;
 import com.example.spboot.domain.User;
 import com.example.spboot.domain.dto.CaptchaResponseDTO;
 import com.example.spboot.service.UserService;
-import javafx.print.Collation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
