@@ -4,6 +4,10 @@ import com.example.OutlookIntegration.model.TokenResponse;
 import com.example.OutlookIntegration.service.TokenService;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import org.springframework.http.*;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
@@ -11,8 +15,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Properties;
-import java.util.UUID;
+import java.util.*;
 
 public class AuthHelper {
 
@@ -125,9 +128,11 @@ public class AuthHelper {
         TokenService tokenService = retrofit.create(TokenService.class);
 
         try {
-            return tokenService.getAccessTokenFromAuthCode(tenantId, getAppId(), getAppPassword(),
-                    "authorization_code", authCode, getRedirectUrl()).execute().body();
-        } catch (IOException e) {
+//            Call<TokenResponse> authorization_code = tokenService.getAccessTokenFromAuthCode(tenantId, getAppId(), getAppPassword(),
+//                    "authorization_code", authCode, getRedirectUrl());
+//            return authorization_code.execute().body();
+            return getByRestTemplate(authCode,tenantId);
+        } catch (Exception e) {
             TokenResponse error = new TokenResponse();
             error.setError("IOException");
             error.setErrorDescription(e.getMessage());
@@ -135,5 +140,18 @@ public class AuthHelper {
         }
     }
 
-
+    public static TokenResponse getByRestTemplate(String authCode, String tenantId){
+        RestTemplate restTemplate = new RestTemplate();
+//        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("client_id", getAppId());
+        map.put("client_secret", getAppPassword());
+        map.put("grant_type", "authorization_code");
+        map.put("code", authCode);
+        map.put("redirect_uri", getRedirectUrl());
+        HttpHeaders headers = new HttpHeaders();
+        HttpEntity request = new HttpEntity(map);
+        TokenResponse tokenResponse = restTemplate.postForObject(authority + "/{tenantid}/oauth2/v2.0/token", request, TokenResponse.class, tenantId);
+        return tokenResponse;
+    }
 }
