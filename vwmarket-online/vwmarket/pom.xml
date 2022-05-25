@@ -18,7 +18,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <!--<javaee.cersion>7.0</javaee.cersion>-->
-        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <javaee.version>7.0</javaee.version>
     </properties>
 
